@@ -3,5 +3,9 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
+title: Home
+description: I am a person.
 ---
-This is a test page.
+
+# Cool Stuff
+I do a lot of really cool things. Check them out below.

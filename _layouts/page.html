@@ -55,29 +55,10 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-								{{content}}
-							</header>
-							<h2>My Projects</h2>
-							<section class="tiles">
-								{% for page in site.pages %}
-									{% if page.category == "project" %}
-										{% assign path_name = page.path | replace: ".md", "" %}
-										{% assign image_name = "images/" | append: page.path %}
-										<article >
-											<span class="image">
-												<img class="tile-image" src={{image_name | replace: "md", "jpg" }} alt="" />
-											</span>
-											<a href={{path_name}}>
-												<h2>{{page.title}}</h2>
-												<div class="content">
-													<p>{{page.description}}</p>
-												</div>
-											</a>
-										</article>
-									{% endif %}
-								{% endfor %}
-							</section>
+							<h1>{{page.title}}</h1>
+							{% assign image_name = "images/" | append: page.path %}
+							<span class="image main"><img src={{image_name | replace: ".md", "-large.jpg" }} alt="" /></span>
+							{{content}}
 						</div>
 					</div>
 
@@ -93,7 +74,7 @@
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Matthew Brucker. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Matt Brucker. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
