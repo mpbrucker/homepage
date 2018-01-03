@@ -14,7 +14,7 @@ For my work in the Olin Robotics Lab, I worked with the Edwin group to create ex
 The first step in recognizing is to perform preprocessing in order to isolate characters. I achieved this by using a number of [OpenCV](https://opencv.org/) filters to isolate the contours of the individual characters and convert them into black-and-white images similar in look to the famous [MNIST](http://yann.lecun.com/exdb/mnist/) dataset.
 
 <div class = "row uniform">
-  <div class = "6u">
+  <div class = "6u -3u">
     <span class = "image fit">
       <img src="images/chars.png">
     </span>
@@ -33,7 +33,7 @@ In order to determine what letters are written, I used a simple k-nearest neighb
 In order to write the words, my program interfaced with a number of other scripts written by the Edwin group, with everything controlled by [ROS](http://www.ros.org/). In fact, the only functionality my program has is to input the camera feed, and output the string of whatever word is being guessed. I did use a threshold of "stability," where the same word had to appear for three seconds in order to guarantee that it was actually seeing a word; additionally, I added detection of whenever a new word is seen. Through this, we implemented a simple program where Edwin (the robot) looks at a word written on a piece of paper, and then writes down his own guess of what word was written, seen below.
 
 <div class = "row uniform">
-  <div class = "6u">
+  <div class = "6u -3u">
     <span class = "image fit">
       <img src="images/drawing.gif">
     </span>
