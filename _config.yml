@@ -20,7 +20,7 @@ url: "http://mbrucker.com" # the base hostname & protocol for your site, e.g. ht
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
