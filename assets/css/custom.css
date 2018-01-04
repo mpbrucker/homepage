@@ -23,7 +23,7 @@
 }
 
 #footer {
-  padding: 2em 0 2em 0;
+  padding: 1em 0 1em 0;
 }
 
 .category {
@@ -33,4 +33,20 @@
 
 .tiles {
   margin-top: 0;
+}
+
+.title {
+  color: #f2849e;
+}
+
+#header .logo .symbol img {
+  display: block;
+  width: 3em;
+  height: 3em;
+}
+
+.round {
+  border-radius: 50% !important;
+  max-width: 200px;
+  max-height: 200px;
 }

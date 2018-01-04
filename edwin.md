@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: elements
 title: Handwriting Recognition
 description: Creating an interactive robotic handwriting-guessing game.
 category: computing
