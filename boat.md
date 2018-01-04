@@ -94,7 +94,7 @@ After gluing everything together, we wrapped it in vinyl shrink wrap to waterpro
 
 ## Boat performance
 
-On the testing day, our boat performed admirably. It fulfilled all the requirements, with a perfect AVS of 130 and a relatively high max speed of 4.31 m/s. It was slightly unstable due to a low righting moment at low angles, a factor we overlooked when designing the boat. However, it still worked well enough to float flat, and its intimidating size made it a force to be reckoned with. You can view our full boat design report [here](assets/QEA_Boat_Paper.pdf).
+On the testing day, our boat performed admirably. It fulfilled all the requirements, with a perfect AVS of 130° and a relatively high max speed of 4.31 m/s. It was slightly unstable due to a low righting moment at low angles, a factor we overlooked when designing the boat. However, it still worked well enough to float flat, and its intimidating size made it a force to be reckoned with. You can view our full boat design report [here](assets/QEA_Boat_Paper.pdf).
 
 <div class = "row uniform">
   <div class = "6u -3u">

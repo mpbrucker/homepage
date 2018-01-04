@@ -24,22 +24,19 @@ For the first several weeks, we focused on research of hermit crabs and ideation
 Additionally, we began brainstorming ideas for our play experience, aiming for as broad a range of ideas as possible. We wanted to start with a large scope and a lot of ideas, then narrow and refine our ideas as we obtained more information.
 
 <div class = "row uniform">
-  <div class = "6u -3u">
+  <div class = "6u">
     <span class = "image fit">
       <img src="images/pic2.jpg">
     </span>
   </div>
-</div>
-
-Early on, a noteworthy behavior we identified was the shell-switching behavior of hermit crabs; at certain times, several hermit crabs will switch shells, with each crab lining up, leaving its old shell, and taking the shell of the crab in front of it. We wanted to simulate this behavior in our play experience.
-
-<div class = "row uniform">
-  <div class = "6u -3u">
+  <div class = "6u">
     <span class = "image fit">
       <img src="images/pic3.jpg">
     </span>
   </div>
 </div>
+
+Early on, a noteworthy behavior we identified was the shell-switching behavior of hermit crabs; at certain times, several hermit crabs will switch shells, with each crab lining up, leaving its old shell, and taking the shell of the crab in front of it. We wanted to simulate this behavior in our play experience.
 
 We also conducted research into the user-centered elements of our design; we talked to fourth-graders at a local school to determine what they wanted in a play experience, and we researched educational standards for fourth-graders. From this research, we decided to add elements of hiding from predators and finding food, in order to teach about the environments in which hermit crabs live.
 

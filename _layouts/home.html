@@ -43,7 +43,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href={{site.baseurl}}>Home</a></li>
-							<li><a href={{site.baseurl | append: "/resume.pdf"}}>Resume</a></li>
+							<li><a href={{site.url | append: "/assets/resume.pdf"}}>Resume</a></li>
 						</ul>
 						</ul>
 						<h4>Computing</h4>
@@ -84,7 +84,7 @@
 							<section class="tiles">
 								{% for page in site.pages %}
 									{% if page.category == "computing" %}
-										{% assign path_name = page.path | replace: ".md", "" %}
+										{% assign path_name = page.path | replace: ".md", ".html" %}
 										{% assign image_name = "images/" | append: page.path %}
 										<article >
 											<span class="image tile">
@@ -104,7 +104,7 @@
 							<section class="tiles">
 								{% for page in site.pages %}
 									{% if page.category == "design" %}
-										{% assign path_name = page.path | replace: ".md", "" %}
+										{% assign path_name = page.path | replace: ".md", ".html" %}
 										{% assign image_name = "images/" | append: page.path %}
 										<article >
 											<span class="image tile">
@@ -127,7 +127,7 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Follow Me</h2>
+								<h2>Contact Me</h2>
 								<ul class="icons">
 									{% for page in site.data.social %}
 									<li><a href={{page.url}} class="icon style2 fa-{{page.icon}}"><span class="label">{{page.name}}</span></a></li>

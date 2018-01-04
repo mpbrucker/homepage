@@ -1,5 +1,5 @@
 ---
-layout: elements
+layout: page
 title: Edwin Handwriting Recognition
 description: Creating an interactive robotic handwriting-guessing game.
 category: computing
