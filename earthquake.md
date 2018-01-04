@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Earthquake Simulation
+title: Cellular Automata Earthquakes
 description: Using Python to investigate self-organized criticality.
 category: computing
 date: Fall 2017

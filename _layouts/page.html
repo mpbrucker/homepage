@@ -39,18 +39,31 @@
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href={{site.baseurl}}>Home</a></li>
-							{% for page in site.pages %}
-								{% if page.path != "feed.xml" and page.path != "assets/main.scss" and page.title != "Home" %}
-									{% assign path_name = page.path | replace: ".md", ".html" %}
-									<li><a href={{path_name}}>{{page.title}}</a></li>
-								{% endif %}
-							{% endfor %}
-						</ul>
-					</nav>
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href={{site.baseurl}}>Home</a></li>
+						<li><a href={{site.baseurl | append: "/resume.pdf"}}>Resume</a></li>
+					</ul>
+					<h4>Computing</h4>
+					<ul>
+						{% for page in site.pages %}
+							{% if page.category == "computing" %}
+								{% assign path_name = page.path | replace: ".md", ".html" %}
+								<li><a href={{path_name}}>{{page.title}}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+					<h4>Design</h4>
+					<ul>
+						{% for page in site.pages %}
+							{% if page.category == "design" %}
+								{% assign path_name = page.path | replace: ".md", ".html" %}
+								<li><a href={{path_name}}>{{page.title}}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</nav>
 
 				<!-- Main -->
 					<div id="main">

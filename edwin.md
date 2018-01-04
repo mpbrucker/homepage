@@ -1,13 +1,13 @@
 ---
 layout: elements
-title: Handwriting Recognition
+title: Edwin Handwriting Recognition
 description: Creating an interactive robotic handwriting-guessing game.
 category: computing
 date: Fall 2016
 subject: Olin Robotics Lab
 ---
 
-For my work in the Olin Robotics Lab, I worked with the Edwin group to create experiences that emphasize human-robot interaction. For my project, I created a simple game: write your name in your normal handwriting, and Edwin will guess it and reproduce it. This project heavily involved image processing and character recognition techniques.
+For my work in the Olin Robotics Lab, I worked with the Edwin group (a group that focuses on eusocial, coworking robots) to create experiences that emphasize human-robot interaction. For my project, I created a simple game: write your name in your normal handwriting, and Edwin will guess it and reproduce it. This project heavily involved image processing and character recognition techniques.
 
 ## Preprocessing
 

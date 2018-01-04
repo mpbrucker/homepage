@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Boat Design
-description: Designing a boat - mathematically.
+title: Computational Boat Design
+description: Using computational tools to design a boat - mathematically.
 category: design
 date: Spring 2017
 subject: Quantitative Engineering Analysis
