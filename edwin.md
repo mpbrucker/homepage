@@ -2,7 +2,7 @@
 layout: page
 title: Handwriting Recognition
 description: Creating an interactive robotic handwriting-guessing game.
-category: project
+category: computing
 date: Fall 2016
 subject: Olin Robotics Lab
 ---

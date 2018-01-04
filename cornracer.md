@@ -2,7 +2,7 @@
 layout: page
 title: Corn Racer
 description: Using evolutionary algorithms to simulate a self-driving car in Python.
-category: project
+category: computing
 date: Spring 2017
 subject: Software Design
 ---

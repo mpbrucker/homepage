@@ -25,3 +25,12 @@
 #footer {
   padding: 2em 0 2em 0;
 }
+
+.category {
+  padding-top: 2em;
+  margin: 0;
+}
+
+.tiles {
+  margin-top: 0;
+}

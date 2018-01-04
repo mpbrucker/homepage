@@ -2,7 +2,7 @@
 layout: page
 title: Play Experience
 description: Designing a biologically inspired play experience for fourth graders.
-category: project
+category: design
 date: Fall 2016
 subject: Design Nature
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Earthquake Simulation
 description: Using Python to investigate self-organized criticality.
-category: project
+category: computing
 date: Fall 2017
 subject: Complexity Science
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Boat Design
 description: Designing a boat - mathematically.
-category: project
+category: design
 date: Spring 2017
 subject: Quantitative Engineering Analysis
 ---

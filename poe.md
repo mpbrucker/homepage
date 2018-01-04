@@ -2,7 +2,7 @@
 layout: page
 title: Jukebox Heroes
 description: Creating a mechanical jukebox.
-category: project
+category: computing
 date: Fall 2017
 subject: Principles of Engineering
 ---

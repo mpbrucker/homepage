@@ -2,7 +2,7 @@
 layout: page
 title: Makit STEM Box
 description: Designing and building educational construction toys.
-category: project
+category: design
 date: Spring 2017
 subject: Products & Markets
 ---
