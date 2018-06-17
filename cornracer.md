@@ -5,6 +5,7 @@ description: Using evolutionary algorithms to simulate a self-driving car in Pyt
 category: computing
 date: Spring 2017
 subject: Software Design
+elements: Python
 ---
 
 For the final project in my Software Design class, I worked on a team of five people to create a Python-based self-driving car simulation. We set out with a variety of learning goals, primarily related to learning about evolutionary algorithms and physics simulation. The end result is an interactive game in which the player can drive a car on the racetrack, watch our pre-trained car drive around the racetrack, or draw their own track and drive around on that.

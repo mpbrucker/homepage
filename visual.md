@@ -3,6 +3,7 @@ layout: page
 title: Visual Design
 description: My visual and graphic design work.
 category: design
+elements: Design, Adobe Illustrator
 ---
 
 ## Iconography

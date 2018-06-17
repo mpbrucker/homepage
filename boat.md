@@ -5,6 +5,7 @@ description: Using computational tools to design a boat - mathematically.
 category: design
 date: Spring 2017
 subject: Quantitative Engineering Analysis
+elements: Mathematica, Solidworks
 ---
 
 For our first project, we were tasked with designing a boat. It had to fulfill certain requirements: it had to float on water, float flat, have an [angle of vanishing stability](http://sailskills.co.uk/Stability/sailskills_stability_stability_explained_AVS.html) of between 120° and 140°, and go as fast as possible. And what's more, we couldn't test it - we had to design it mathematically, fabricate it, and be confident that our calculations were correct. We managed to accomplish it in under a week.

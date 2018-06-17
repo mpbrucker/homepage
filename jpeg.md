@@ -5,6 +5,7 @@ description: Exploring image transforms through JPEG compressions.
 category: computing
 date: Fall 2017
 subject: Quantitative Engineering Analysis
+elements: MATLAB
 ---
 
 For this project, my team decided to explore a concept that we had already explored in Quantitative Engineering Analysis: sinusoid-based transforms. We wrote our own implementation of JPEG in MATLAB, from scratch.

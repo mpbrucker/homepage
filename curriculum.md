@@ -5,6 +5,7 @@ description: Learning how to design educational resources.
 category: design
 date: Fall 2017
 subject: Quantitative Engineering Analysis
+elements: MATLAB, Design
 ---
 
 ## Designing an Assignment

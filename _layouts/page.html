@@ -6,6 +6,16 @@
 -->
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112913071-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-112913071-1');
+		</script>
+
 		<title>{{page.title}} - {{site.title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,6 +72,7 @@
 								<li><a href={{path_name}}>{{page.title}}</a></li>
 							{% endif %}
 						{% endfor %}
+						<li><a href={{site.url | append: "/sandbox.html"}}>Sandbox</a></li>
 					</ul>
 				</nav>
 
@@ -70,7 +81,7 @@
 						<div class="inner">
 							<h1>{{page.title}}</h1>
 							{% if page.subject and page.date %}
-								<h2>{{page.subject}} | {{page.date}}</h2>
+								<h4>{{page.subject}} | {{page.date}} | Skills: {{page.elements}}</h4>
 							{% endif %}
 							{% assign image_name = "images/" | append: page.path %}
 							<span class="image main"><img src={{image_name | replace: ".md", "-large.jpg" }} alt="" /></span>

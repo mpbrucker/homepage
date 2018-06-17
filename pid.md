@@ -5,6 +5,7 @@ description: Applying controls concepts to balance a Segway.
 category: computing
 date: Fall 2017
 subject: Quantitative Engineering Analysis
+elements: Arduino, Mathematica
 ---
 
 ## Inverted Pendulum Control

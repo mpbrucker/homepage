@@ -5,6 +5,7 @@ description: Using Python to investigate self-organized criticality.
 category: computing
 date: Fall 2017
 subject: Complexity Science
+elements: Python
 ---
 
 In this project, my team aimed to investigate the [self-organized criticality](https://en.wikipedia.org/wiki/Self-organized_criticality) (SOC) of earthquakes by replicating a [paper](http://basin.earth.ncu.edu.tw/Course/SeminarII/abstract2013_1/0306-2-1.pdf) that models earthquakes using a cellular-automata based model; using this model, we investigated whether the system exhibits common SOC properties: power-law distributions, pink noise, and fractal geometry. We found that it isn't always easy to draw a clear line as to whether a system is self-organized critical; however, this model of earthquakes did display some features of SOC, even when energy wasn't conserved within the system.

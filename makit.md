@@ -5,6 +5,7 @@ description: Designing and building educational construction toys.
 category: design
 date: Spring 2017
 subject: Products & Markets
+elements: Design, Adobe Illustrator
 ---
 
 For this project, my team investigated creating a subscription service that sells monthly subscriptions to educational toys. We went through several iterations of our idea, testing different types of toys, different models of sale, and eventually creating and playtesting our own construction toy set.

@@ -5,6 +5,7 @@ description: Creating a mechanical jukebox.
 category: computing
 date: Fall 2017
 subject: Principles of Engineering
+elements: Arduino, C++, Raspberry Pi
 ---
 
 In Principles of Engineering, my team was given eight weeks to create a project that combined mechanical, electrical, and software elements. We set out to create a mechanical jukebox: a device that, given a user input, would play a song by dropping marbles onto a xylophone in time with the notes of the song. Over the course of the project, we went through a rapid series of prototypes to take our project from a prototype...

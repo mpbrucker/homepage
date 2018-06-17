@@ -6,6 +6,16 @@
 -->
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112913071-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-112913071-1');
+		</script>
+
 		<title>{{page.title}} - {{site.title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -63,6 +73,7 @@
 									<li><a href={{path_name}}>{{page.title}}</a></li>
 								{% endif %}
 							{% endfor %}
+							<li><a href={{site.url | append: "/sandbox.html"}}>Sandbox</a></li>
 						</ul>
 					</nav>
 
@@ -74,7 +85,7 @@
 								<p style="font-size: 20px; line-height: 40px;">
 									<span class="image left">
 										<img src="images/face.jpg" class="round">
-									</span>I'm a sophomore at <a href="http://olin.edu/">Olin College of Engineering</a>, majoring in Engineering with Computing. My work involves everything from computer vision and controls to information theory and cybersecurity. Python is my language of choice. Apart from coding, education is my passion; I've worked on a number of projects designing things like play experiences and educational building kits, and I research gender dynamics in engineering education.
+									</span>I'm a junior at <a href="http://olin.edu/">Olin College of Engineering</a>, majoring in Engineering with Computing. My work involves everything from computer vision and controls to information theory and cybersecurity. Python is my language of choice. Apart from coding, education is my passion; I've worked on a number of projects designing things like play experiences and educational building kits, and I research gender dynamics in engineering education.
 								</p>
 								<p></p>
 								{{content}}
