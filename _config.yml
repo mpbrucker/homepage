@@ -16,11 +16,14 @@
 title: Matt Brucker | Computing + Design
 baseurl: "/"
 description: Documenting the work of Matt Brucker
-url: "http://mbrucker.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mbrucker.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
