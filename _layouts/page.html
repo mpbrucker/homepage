@@ -5,77 +5,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112913071-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-112913071-1');
-		</script>
-
-		<title>{{page.title}} - {{site.title}}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
+	{% include header.html %}
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href={{site.baseurl}} class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">{{site.title}}</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-				<nav id="menu">
-					<h2>Menu</h2>
-					<ul>
-						<li><a href={{site.baseurl}}>Home</a></li>
-						<li><a href={{site.url | append: "/assets/resume.pdf"}}>Resume</a></li>
-					</ul>
-					<h4>Computing</h4>
-					<ul>
-						{% for page in site.pages %}
-							{% if page.category == "computing" %}
-								{% assign path_name = page.path | replace: ".md", ".html" %}
-								<li><a href={{path_name}}>{{page.title}}</a></li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-					<h4>Design</h4>
-					<ul>
-						{% for page in site.pages %}
-							{% if page.category == "design" %}
-								{% assign path_name = page.path | replace: ".md", ".html" %}
-								<li><a href={{path_name}}>{{page.title}}</a></li>
-							{% endif %}
-						{% endfor %}
-						<li><a href={{site.url | append: "/sandbox.html"}}>Sandbox</a></li>
-					</ul>
-				</nav>
-
+				{% include nav.html %}
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
@@ -89,22 +24,7 @@
 						</div>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Contact Me</h2>
-								<ul class="icons">
-									{% for page in site.data.social %}
-									<li><a href={{page.url}} class="icon style2 fa-{{page.icon}}"><span class="label">{{page.name}}</span></a></li>
-									{% endfor %}
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Matt Brucker. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+				{% include footer.html %}
 
 			</div>
 
