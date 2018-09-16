@@ -11,6 +11,8 @@ branches:
   only:
   - master
 
+install:
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
@@ -41,6 +43,7 @@ deploy:
     local_dir: _site
     region: "us-west-2"
   - provider: lambda
+    zip: lambda/
     function_name: "imageResizer"
     region: "us-west-2"
     access_key_id: $AWS_ACCESS_KEY_ID
