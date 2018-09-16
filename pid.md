@@ -16,13 +16,8 @@ For our project in Quantitative Engineering Analysis, my team was tasked with cr
 
 At its heart, our control algorithm is based on PID (proportional, integral, derivative) control:
 
-<div class = "row uniform">
-  <div class = "8u -2u">
-    <span class = "image fit">
-      <img src="images/PID.png">
-    </span>
-  </div>
-</div>
+![](images/PID.png)
+
 
 In our control system, we have two PID loops:
 
