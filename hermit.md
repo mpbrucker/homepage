@@ -14,13 +14,7 @@ For our final project in Design Nature, my team was tasked with designing and bu
 
 For the first several weeks, we focused on research of hermit crabs and ideation of ideas. We began by investigating the biology and behavior of hermit crabs in the wild: what did they eat? How did they move? What interesting or unique behaviors did they have?
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/pic1.jpg">
-    </span>
-  </div>
-</div>
+![](images/pic1.jpg)
 
 Additionally, we began brainstorming ideas for our play experience, aiming for as broad a range of ideas as possible. We wanted to start with a large scope and a lot of ideas, then narrow and refine our ideas as we obtained more information.
 
@@ -75,10 +69,4 @@ Ultimately, we ended up with a game we called Hermit Crab Olympics. We built two
 
 Although we had to do pare down our ideas significantly, we were able to finish our final product, and on the final day, a group of fourth-graders came into playtest our project! Fortunately, it was a hit, getting high ratings in fun from the fourth-graders.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/pic8.jpg">
-    </span>
-  </div>
-</div>
+![](images/pic8.png)
