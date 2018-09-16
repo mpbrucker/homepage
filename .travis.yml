@@ -45,6 +45,7 @@ matrix:
         on:
           branch: master
         zip: lambda/
+        role: "arn:aws:iam::810842305846:role/service-role/resizerRole"
         function_name: "imageResizer"
         region: "us-west-2"
         access_key_id: $AWS_ACCESS_KEY_ID
