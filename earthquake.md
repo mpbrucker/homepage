@@ -17,13 +17,7 @@ One known properties of earthquakes in the physical world is that their occurren
 
 Our model, based on the model in the paper, is a stick-and-slip model of earthquakes; a fault line is represented by a 2D grid of blocks. Each block is resting on a stationary plate and attached via springs to both its neighbors and a moving plate above. While this model isn't how earthquakes function in the physical world, it exhibits properties similar to real earthquakes, and thus is useful for studying properties of earthquakes in the physical world.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/Plates.png">
-    </span>
-  </div>
-</div>
+![](images/Plates.png)
 
 In this model, initial forces are randomly distributed among the blocks, and each block has a threshold force; when the total force on a block from its neighbors exceeds the threshold force, the block slips, distributing the forces in it to its neighbors. Most of the time, only one block slips at a time, in a small earthquake; however, occasionally a single slipping block can cause a chain reaction, leading its neighbors to slip, and so on, constituting a much larger earthquake.
 
@@ -31,23 +25,11 @@ In this model, initial forces are randomly distributed among the blocks, and eac
 
 We implemented our model in Python using a basic cellular automaton framework. The grid of blocks is represented by a 2D matrix, where value of each element in the matrix is the total force on that particular block. Each timestep, the total force is computed on each block, and those blocks that exceed the threshold force are set to 0 with their forces redistributed to their neighbors.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/quake.gif">
-    </span>
-  </div>
-</div>
+![](images/quake.gif)
 
 Our program uses the [ThinkComplexity](https://github.com/allendowney/thinkcomplexity2) library, utilizing [Numpy](http://www.numpy.org/) for the matrix-based calculations. In our graphical representation of the system, white squares have zero net force acting on them, while red and blue blocks indicate positive and negative forces, respectively. As can be seen in our visualization, most of the time, only a few blocks slip in any given timestep; however, occasionally, larger earthquakes do occur when one block triggers a chain reaction.
 
-<div class = "row uniform">
-  <div class = "12u">
-    <span class = "image fit">
-      <img src="images/power_law_4.png">
-    </span>
-  </div>
-</div>
+![](images/power_law_4.png)
 
 As can be seen in the figure above, we were able to closely replicate some of the results of the original paper; a straight line on a log-log scale indicates that our system follows a power-law distribution, and our quantitative results were almost exactly the same as the results of the original paper.
 
@@ -55,13 +37,7 @@ As can be seen in the figure above, we were able to closely replicate some of th
 
 In addition to the replication of the original paper, one aspect of the project that I worked on was creating visualizations of the earthquake model. Using [matplotlib](https://matplotlib.org/), I created a 3D visualization of the earthquakes; although it doesn't show much quantitative information, it gives a good comparison of the difference between high-force and low-force blocks.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/quake_3d.gif">
-    </span>
-  </div>
-</div>
+![](images/quake_3d.gif)
 
 ## Learn more
 
