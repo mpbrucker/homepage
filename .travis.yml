@@ -38,6 +38,7 @@ matrix:
     - language: python
       python: 3.6
       install: pip install -r requirements.txt -t lambda/
+      script: echo "Finished packaging dependencies."
 
       deploy:
         provider: lambda
