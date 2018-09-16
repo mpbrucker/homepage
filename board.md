@@ -14,23 +14,13 @@ Our second project in Hacking the Library tasked us with creating a use for the 
 
 On the team, my role was crafting the frontend of the app. Because we wrote InfinityBoard in a language that was entirely new to me (JavaScript, with NodeJS on the backend and React on the frontend), I focused on starting from scratch, relying on external libraries as little as possible.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/board1.png">
-    </span>
-  </div>
-</div>
+![](images/board1.png)
+
 
 Early on, most of the challenges in writing the frontend involved building the basic functionality - we had a vision of being able to add, move, resize, and edit boxes of various types, so I focused on building the basic box functionality. After creating the basic box, I began fleshing out the full functionality of the boxes. I created text boxes which could be edited, and image uploading functionality to AWS S3 for image boxes. Additionally, I built a number of minor features for the frontend such as box deletion, pointers that show the positions of other people on the same board, and screen dragging to allow users to move their screen around - making the board actually be infinite!
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/board_final.png">
-    </span>
-  </div>
-</div>
+![](images/board_final.png)
+
 
 ## Handling State
 
@@ -44,22 +34,12 @@ As part of my learning goals for the project, I also implemented unit testing on
 
 After building InfinityBoard, a large component of our project was bringing it into the world and letting members of the Olin community test it. We set up InfinityBoard at a number of events in the Library, including community breakfasts and the ACRONYM, a student-run pop-up coffee shop. Ultimately, InfinityBoard ended up being mostly used for fun instead of for productivity at these events, but it was still a valuable experience to build this app and bring it to actual users!
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/board_demo.jpg">
-    </span>
-  </div>
-</div>
+![](images/board_demo.jpg)
+
 *Kyle demonstrating InfinityBoard at an Olin Library event.*
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/board_baby.jpg">
-    </span>
-  </div>
-</div>
+![](images/board_baby.jpg)
+
 *InfinityBoard being run on the Idea Harvester, and on a mini Idea Harvester, another project by Hacking the Library students.*
 
 Check out our code [here](https://github.com/olinlibrary/infinity-board), and learn more about other Olin Library software projects [here.](https://olin.build/)
