@@ -37,21 +37,26 @@ matrix:
 
     - language: python
       python: 3.6
+
+      branches:
+        only:
+        - lambda
       install: pip install -r requirements.txt -t lambda/
       script: echo "Finished packaging dependencies."
 
       deploy:
         provider: lambda
         on:
-          branch: master
+          branch: lambda
         zip: lambda/
         role: "arn:aws:iam::810842305846:role/service-role/resizerRole"
         function_name: "imageResizer"
         region: "us-west-2"
+        module_name: "lambda_function"
         access_key_id: $AWS_ACCESS_KEY_ID
         secret_access_key: $AWS_SECRET_ACCESS_KEY
         runtime: "python3.6"
-        handler_name: "lambda_function"
+        handler_name: "lambda_handler"
 
 # Optional: disable email notifications about the outcome of your builds
 notifications:
