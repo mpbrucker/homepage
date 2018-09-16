@@ -14,25 +14,13 @@ For the final project in my Software Design class, I worked on a team of five pe
 
 The first challenge of the project was creating a realistic physics simulation of the car. In order to keep the scope of the project manageable, we chose a two-wheel design with the front wheel steering, as well as features such as slip between the tires and the road. This allowed us to fulfill our goals of creating a fairly realistic simulation of the physics of a car, while also keeping implementation fairly achievable.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/car.png">
-    </span>
-  </div>
-</div>
+![A car.](images/car.png)
 
 ## Autonomous Driving and Evolution
 
 In deciding how to have our simulated car "drive" itself, we aimed to pick a method of simulation that was grounded in reality while also being implementable with our goal of using evolutionary algorithms. The system we devised is essentially a simulated LIDAR; the car has 20 beams that point in all directions from the car; the car detects how far each beam travels before hitting the edge of the road.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/LIDAR.png">
-    </span>
-  </div>
-</div>
+![The LIDAR.](images/LIDAR.png)
 
 It takes the direction and distance of each LIDAR beam as a vector quantity and uses the linear combination these vectors and a series of weights in order to determine the vector (direction and magnitude of acceleration) of where to drive. These weights are simply a series of scalars with arbitrary starting values; by making these values the traits in our evolutionary algorithm, we can "evolve" the way in which the car drives to eventually come to a point where the car can drive around the track by itself. Note, however, that each evolution of the car only works on the track on which it was evolved.
 
