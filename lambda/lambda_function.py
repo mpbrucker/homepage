@@ -6,7 +6,6 @@ from os import path
 
 s3 = boto3.resource('s3')
 origin_bucket = 'mbrucker.com'
-destination_bucket = 'my-resized'
 width_size = 1000
 height_size = 500
 
@@ -51,13 +50,13 @@ def lambda_handler(event, context):
 
         # Uploading the image
         obj = s3.Object(
-            bucket_name=destination_bucket,
+            bucket_name=origin_bucket,
             key='images/' + object_key,
         )
         obj.put(Body=buffer)
 
         # Printing to CloudWatch
         print('File saved at {}/{}'.format(
-            destination_bucket,
+            origin_bucket,
             object_key,
         ))
