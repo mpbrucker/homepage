@@ -6,28 +6,36 @@
 -->
 <html>
 	{% include header.html %}
+	<link rel="stylesheet" href="/assets/css/main-style.css" />
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
-				{% include nav.html %}
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>About Me</h1>
-								<p style="font-size: 20px; line-height: 40px;">
-									<span class="image left">
-										<img src="images/face.jpg" class="round">
-									</span>I'm a junior at <a href="http://olin.edu/">Olin College of Engineering</a>, majoring in Engineering with Computing. My work involves everything from front-end web development to cybersecurity and graphics rendering, working primarily in Python and JS (React/NodeJS). I work on building community technology, designing eduactional experiences, and researching education.
-								</p>
-								<p></p>
-								{{content}}
-							</header>
-							<h1>My Projects</h1>
-							{% include project-list.html %}
-						</div>
+				<div id="splash">
+					<div id="box-left" class="horizontal"></div>
+					<div id="box-right" class="horizontal"></div>
+					<div id="box-top" class="vertical"></div>
+					<div id="box-bottom" class="vertical"></div>
+					<div id="continue">
+						<a href="#main">More</a>
 					</div>
-					{% include footer.html %}
+				</div>
+				<!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<header>
+							<h1>About Me</h1>
+							<p style="font-size: 20px; line-height: 40px;">
+								<span class="image left">
+									<img src="images/face.jpg" class="round">
+								</span>I'm a junior at <a href="http://olin.edu/">Olin College of Engineering</a>, majoring in Engineering with Computing. My work involves everything from front-end web development to cybersecurity and graphics rendering, working primarily in Python and JS (React/NodeJS). I work on building community technology, designing eduactional experiences, and researching education.
+							</p>
+							<p></p>
+							{{content}}
+						</header>
+						{% include project-list.html %}
+					</div>
+				</div>
+				{% include footer.html %}
 			</div>
 
 		<!-- Scripts -->

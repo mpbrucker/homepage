@@ -36,6 +36,9 @@ topics:
   - design
   - computing
 
+sass:
+  sass_dir: assets/css
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
