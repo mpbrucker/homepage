@@ -3,7 +3,7 @@ layout: page
 title: Computational Boat Design
 description: Using computational tools to design a boat - mathematically.
 category: design
-date: Spring 2017
+semester: Spring 2017
 subject: Quantitative Engineering Analysis
 elements: Mathematica, Solidworks
 ---

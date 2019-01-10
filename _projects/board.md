@@ -3,7 +3,7 @@ layout: page
 title: InfinityBoard
 description: Building a real-time, collaborative whiteboard.
 category: computing
-date: Spring 2018
+semester: Spring 2018
 subject: Hacking the Library
 elements: React.js, AWS, Heroku
 ---

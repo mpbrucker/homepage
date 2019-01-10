@@ -3,7 +3,7 @@ layout: page
 title: Hermit Crab Play Experience
 description: Designing a biologically inspired play experience for fourth graders.
 category: design
-date: Fall 2016
+semester: Fall 2016
 subject: Design Nature
 elements: Design
 ---

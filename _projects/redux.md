@@ -2,7 +2,7 @@
 layout: page
 title: InfinityBoard 2.0
 description: Managing shared state.
-date: Summer 2018
+semester: Summer 2018
 subject: Hacking the Library
 elements: React.js, Redux
 ---

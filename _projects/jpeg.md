@@ -3,7 +3,7 @@ layout: page
 title: JPEG Compression
 description: Exploring image transforms through JPEG compressions.
 category: computing
-date: Fall 2017
+semester: Fall 2017
 subject: Quantitative Engineering Analysis
 elements: MATLAB
 ---

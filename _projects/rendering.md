@@ -3,7 +3,7 @@ layout: page
 title: 3D Graphics Engine
 description: Writing a 3D graphics engine, from scratch.
 category: computing
-date: Spring 2017
+semester: Spring 2017
 subject: Software Design
 elements: Python
 ---

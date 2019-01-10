@@ -15,15 +15,26 @@
 # in the templates via {{ site.myvariable }}.
 title: Matt Brucker | Computing + Design
 baseurl: "/"
-description: Documenting the work of Matt Brucker
+description: Computing + Design
 url: "https://mbrucker.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 theme: minima
 
+permalink: /:title
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
 plugins:
   - jekyll-sitemap
+
+topics:
+  - design
+  - computing
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

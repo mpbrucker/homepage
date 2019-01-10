@@ -3,7 +3,7 @@ layout: page
 title: Inact
 description: Designing for people, with people.
 category: design
-date: Spring 2018
+semester: Spring 2018
 subject: User-Oriented Collaborative Design
 elements: Design, Adobe Illustrator, Adobe InDesign
 ---

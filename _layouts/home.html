@@ -24,46 +24,7 @@
 								{{content}}
 							</header>
 							<h1>My Projects</h1>
-							<h2 class="category">Computing</h2>
-							<section class="tiles">
-								{% for page in site.pages %}
-									{% if page.category == "computing" %}
-										{% assign path_name = page.path | replace: ".md", ".html" %}
-										{% assign image_name = "images/" | append: page.path %}
-										<article >
-											<span class="image tile">
-												<img class="tile-image" src={{image_name | replace: "md", "jpg" }} alt="" />
-											</span>
-											<a href={{path_name}}>
-												<h2>{{page.title}}</h2>
-												<div class="content">
-													<p>{{page.description}}</p>
-												</div>
-											</a>
-										</article>
-									{% endif %}
-								{% endfor %}
-							</section>
-							<h2 class="category">Design</h2>
-							<section class="tiles">
-								{% for page in site.pages %}
-									{% if page.category == "design" %}
-										{% assign path_name = page.path | replace: ".md", ".html" %}
-										{% assign image_name = "images/" | append: page.path %}
-										<article >
-											<span class="image tile">
-												<img class="tile-image" src={{image_name | replace: "md", "jpg" }} alt="" />
-											</span>
-											<a href={{path_name}}>
-												<h2>{{page.title}}</h2>
-												<div class="content">
-													<p>{{page.description}}</p>
-												</div>
-											</a>
-										</article>
-									{% endif %}
-								{% endfor %}
-							</section>
+							{% include project-list.html %}
 						</div>
 					</div>
 					{% include footer.html %}

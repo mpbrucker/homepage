@@ -15,7 +15,7 @@
 						<div class="inner">
 							<h2 class="category">Design Projects</h2>
 							<section class="tiles">
-								{% for page in site.pages %}
+								{% for page in site.projects %}
 									{% if page.category == "design" %}
 										{% assign path_name = page.path | replace: ".md", ".html" %}
 										{% assign image_name = "images/" | append: page.path %}

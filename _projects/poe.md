@@ -3,7 +3,7 @@ layout: page
 title: Jukebox Heroes
 description: Creating a mechanical jukebox.
 category: computing
-date: Fall 2017
+semester: Fall 2017
 subject: Principles of Engineering
 elements: Arduino, C++, Raspberry Pi
 ---

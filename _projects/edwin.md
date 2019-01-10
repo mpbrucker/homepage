@@ -3,7 +3,7 @@ layout: page
 title: Edwin Handwriting Recognition
 description: Creating an interactive robotic handwriting-guessing game.
 category: computing
-date: Fall 2016
+semester: Fall 2016
 subject: Olin Robotics Lab
 elements: Python, OpenCV, ROS
 ---
