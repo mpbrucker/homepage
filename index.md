@@ -1,10 +1,7 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
 description: All About Me
 ---
 
--
+I'm a junior at [Olin College of Engineering](http://olin.edu/) majoring in Engineering with Computing. My work involves everything from front-end web development to cybersecurity and graphics rendering, working primarily in Python and JS (React/NodeJS). I work on building community technology, designing eduactional experiences, and researching education.
