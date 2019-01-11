@@ -33,8 +33,8 @@ plugins:
   - jekyll-sitemap
 
 topics:
-  - design
   - computing
+  - design
 
 sass:
   sass_dir: assets/css

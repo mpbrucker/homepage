@@ -7,10 +7,25 @@
 <html>
 	{% include header.html %}
 	<link rel="stylesheet" href="/assets/css/main-style.css" />
+	
+	
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
+				<div class="path-wrapper">
+					<svg id="path" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="612px" height="320px" viewBox="0 0 612.75 319.71"><defs><style>.cls-1{fill:none;stroke:#ef4136;stroke-miterlimit:10;stroke-width:10px;}</style></defs><title>curve</title><path id="text-path" class="cls-1" d="M607.75,57.77v129a58.47,58.47,0,0,1-116.94,0,38.4,38.4,0,1,0-76.8,0v69.49a58.47,58.47,0,1,1-116.94,0,35,35,0,1,0-70,0,35,35,0,0,1-70.05,0V171.82a58.47,58.47,0,1,0-116.94,0v-2.58a17.52,17.52,0,0,1-35,0V5H607.75Z"/></svg>
+					<div id="path-item" class="path-box">
+						<h2>A</h2>
+					</div>
+					<div id="path-item" class="path-box">
+						<h2>B</h2>
+					</div>
+					<div id="path-item" class="path-box">
+						<h2>C</h2>
+					</div>
+				</div>
 				<div id="splash">
+					
 					<div id="box-left" class="horizontal"></div>
 					<div id="box-right" class="horizontal"></div>
 					<div id="box-top" class="vertical"></div>
@@ -18,6 +33,7 @@
 					<div id="continue">
 						<a href="#main">MORE</a>
 					</div>
+					
 				</div>
 				<!-- Main -->
 				<div id="main">
@@ -35,6 +51,9 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/anime.min.js"></script>
+			<script src="assets/js/path-slider.js"></script>
+			<script src="assets/js/animate-text.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>

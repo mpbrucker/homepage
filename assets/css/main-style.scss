@@ -1,0 +1,182 @@
+---
+---
+
+$box-width: 20px;
+$box-height: 20px;
+
+$horizColor: #cccccc;
+$vertColor: #dddddd;
+
+.path-wrapper {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  z-index: 1;
+}
+
+#path-item {
+  position: absolute;        // Get items out of the flow, and let the library set the correct position
+  left: - $box-width / 2; // Half of the width, for centering purpose
+  top: - $box-height / 2; // Half of the height, for centering purpose
+}
+
+.path-box {
+  width: 20px;
+  height: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#footer {
+  padding: 0;
+  h2 {
+    display: inline-block;
+    padding-right: 1em;
+  }
+  ul {
+    display: inline-block !important;
+  }
+  .copyright {
+    display: inline-block !important;
+    width: auto !important;
+    margin-top: 0px !important;
+  }
+}
+
+.inner {
+  padding-top: 50px !important;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    max-width: 1000px;
+  }
+}
+
+#splash {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #fefefe;
+  display: grid;
+  grid-template-columns: [end-left] 10% [box-left] auto [box-right] 10% [end-right];
+  grid-template-rows: [end-top] 10% [box-top] auto [box-bottom] 10% [end-bottom];
+  
+  #continue {
+    grid-column: box-left / box-right;
+    grid-row: box-bottom / end-bottom;
+    position: relative;
+    text-align: center;
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 42px;
+      color: #ffffff;
+      text-shadow: 2px 2px #888888;
+      line-height: 10vh;
+    }
+    
+  }
+
+  .horizontal {
+    border-top: 10vh solid transparent;
+    border-bottom: 10vh solid transparent;
+    width: 0px;
+    height: 100%;
+  }
+  
+  .vertical {
+    border-left: 10vh solid transparent;
+    border-right: 10vh solid transparent;
+    width: 100%;
+    height: 0px;
+  }
+
+  #box-left {
+    grid-column: end-left / box-left;
+    grid-row: end-top / end-bottom;
+    border-left: 10vh solid $horizColor;
+  }
+
+  #box-right {
+    position: absolute;
+    right: 0px;
+    grid-column: box-right / end-right;
+    grid-row: end-top / end-bottom;
+    border-right: 10vh solid $horizColor;
+  }
+
+  #box-top {
+    grid-column: end-left / end-right;
+    grid-row: end-top / box-top;
+    border-top: 10vh solid $vertColor;
+  }
+
+  #box-bottom {
+    grid-column: end-left / end-right;
+    grid-row: box-bottom / end-bottom;
+    border-bottom: 10vh solid $vertColor;
+  }
+}
+
+// For tiled section of front page
+.tiles {
+  margin-top: 0;
+  article {
+    a {
+      text-shadow: 2px 2px black;
+    }
+    
+    img {
+      filter: blur(3px);
+    }
+
+    .image:after {
+      background-image: none;
+    }
+
+    .image:before {
+      background-color: transparent !important;
+    }
+
+    .tile {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+.category {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px #222222;
+  text-align: center;
+}
+
+.title {
+  color: #f2849e;
+}
+
+#header .logo .symbol img {
+  display: block;
+  width: 3em;
+  height: 3em;
+}
+
+.round {
+  border-radius: 50% !important;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+
+
