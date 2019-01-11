@@ -3,10 +3,25 @@
 
 $box-width: 1vw;
 $box-height: 1.75vw;
-$offset-top: 5px;
+$line-red: #ef4136;
 
 $horizColor: #cccccc;
 $vertColor: #dddddd;
+
+.cover {
+  fill: $vertColor;
+}
+
+.hole {
+  fill: #231f20;
+}
+
+.line {
+  fill: none;
+  stroke: $line-red;
+  stroke-miterlimit: 10;
+  stroke-width: 10px; 
+}
 
 #path-cover {
   position: absolute;
@@ -35,13 +50,15 @@ $vertColor: #dddddd;
   top: - $box-height / 2;
   h2 {
     font-size: 2vw;
-    color: #ef4136;
+    color: $line-red;
     position: absolute;
     margin: 0px !important;
     left: 50%;
     bottom: -100%;
   }
 }
+
+
 
 html {
   scroll-behavior: smooth;
