@@ -133,6 +133,9 @@ PathSlider.prototype = {
 
     setPosition: function (node, position) {
         var p = this.point(position);
+        console.log(document.getElementById('wrapper1').offsetWidth/690.61);
+        p.x *= (document.getElementById('wrapper1').offsetWidth/690.61);
+        p.y *= (document.getElementById('wrapper1').offsetWidth/690.61);
         var p0 = this.point(position - 1);
         var p1 = this.point(position + 1);
         var transforms = ['translate(' + p.x + 'px, ' + p.y + 'px)'];

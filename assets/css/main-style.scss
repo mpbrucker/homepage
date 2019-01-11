@@ -1,8 +1,9 @@
 ---
 ---
 
-$box-width: 50px;
-$box-height: 50px;
+$box-width: 1vw;
+$box-height: 1.75vw;
+$offset-top: 5px;
 
 $horizColor: #cccccc;
 $vertColor: #dddddd;
@@ -14,29 +15,31 @@ $vertColor: #dddddd;
 
 .path-wrapper {
   position: absolute;
-  left: 20vw;
+  left: 15vw;
   width: 40vw;
-  // height: 30vw;
-  top: 0px;
   z-index: 1;
   #path {
     position: absolute;
     width: 100%;
-    top: -3vw;
+    top: calc(-5.7vw + 35px);
+    top: -webkit-calc(-5.7vw + 35px);
+    top: -moz-calc(-5.7vw + 35px);
   }
 }
 
-.path-box {
+#path-item {
   width: $box-width;
   height: $box-height;
   position: absolute;
   left: - $box-width / 2;
   top: - $box-height / 2;
   h2 {
+    font-size: 2vw;
     color: #ef4136;
     position: absolute;
+    margin: 0px !important;
     left: 50%;
-    bottom: -120%;
+    bottom: -100%;
   }
 }
 
