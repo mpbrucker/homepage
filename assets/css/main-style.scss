@@ -9,26 +9,31 @@ $vertColor: #dddddd;
 
 #path-cover {
   position: absolute;
-  top: -76px;
+  top: 0px;
 }
 
 .path-wrapper {
   position: absolute;
-  left: 200px;
-  top: -50px;
+  left: 20vw;
+  width: 40vw;
+  // height: 30vw;
+  top: 0px;
   z-index: 1;
-}
-
-#path-item {
-  position: absolute;        // Get items out of the flow, and let the library set the correct position
-  left: - $box-width / 2; // Half of the width, for centering purpose
-  top: - $box-height / 2; // Half of the height, for centering purpose
+  #path {
+    position: absolute;
+    width: 100%;
+    top: -3vw;
+  }
 }
 
 .path-box {
   width: $box-width;
   height: $box-height;
+  position: absolute;
+  left: - $box-width / 2;
+  top: - $box-height / 2;
   h2 {
+    color: #ef4136;
     position: absolute;
     left: 50%;
     bottom: -120%;
