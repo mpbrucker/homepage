@@ -63,7 +63,6 @@ PathSlider.prototype = {
     },
 
     onMouseMove: function (event) {
-        console.log(this);
         this.pathOffset = event.pageX;
         this.updatePositions();
         this.updateClass();
@@ -130,7 +129,6 @@ PathSlider.prototype = {
                 currentPosition -= this.pathLength;
             }
         }
-        console.log(this.positions);
     },
 
     setPosition: function (node, position) {

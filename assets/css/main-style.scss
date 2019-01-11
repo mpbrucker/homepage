@@ -1,16 +1,21 @@
 ---
 ---
 
-$box-width: 20px;
-$box-height: 20px;
+$box-width: 50px;
+$box-height: 50px;
 
 $horizColor: #cccccc;
 $vertColor: #dddddd;
 
+#path-cover {
+  position: absolute;
+  top: -76px;
+}
+
 .path-wrapper {
   position: absolute;
   left: 200px;
-  top: 200px;
+  top: -50px;
   z-index: 1;
 }
 
@@ -21,8 +26,13 @@ $vertColor: #dddddd;
 }
 
 .path-box {
-  width: 20px;
-  height: 20px;
+  width: $box-width;
+  height: $box-height;
+  h2 {
+    position: absolute;
+    left: 50%;
+    bottom: -120%;
+  }
 }
 
 html {
