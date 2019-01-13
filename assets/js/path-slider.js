@@ -47,25 +47,40 @@ PathSlider.prototype = {
         beginAll: undefined,
         endAll: undefined,
         clickSelection: true,
-        pathOffset: 0
+        pathOffset: 0,
+        scaling: 1,
+        elemWidth: undefined
     },
 
     init: function (options) {
+        
         this.initialOptions = options;
         extend(this, this.defaults, options);
+        this.calcSvgScaling();
         this.initPathOptions();
         this.initItems();
-        var _this = this;
-        document.addEventListener('mousemove', this.onMouseMove.bind(this), false)
+        document.addEventListener('mousemove', this.onMouseMove.bind(this), false);
+        window.addEventListener('resize', this.onWindowResize.bind(this), false);
         if (this.clickSelection) {
             this.initEvents();
         }
     },
 
+    calcSvgScaling: function () {
+        this.scaling = document.getElementById('wrapper1').offsetWidth/690.61;
+    },
+
+    onWindowResize: function (event) {
+        console.log('test');
+        this.calcSvgScaling();
+        this.updatePositions();
+    },
+
     onMouseMove: function (event) {
+        event.stopPropagation();
         this.pathOffset = event.pageX;
         this.updatePositions();
-        this.updateClass();
+        // this.updateClass();
     },
 
     initPathOptions: function () {
@@ -133,9 +148,8 @@ PathSlider.prototype = {
 
     setPosition: function (node, position) {
         var p = this.point(position);
-        console.log(document.getElementById('wrapper1').offsetWidth/690.61);
-        p.x *= (document.getElementById('wrapper1').offsetWidth/690.61);
-        p.y *= (document.getElementById('wrapper1').offsetWidth/690.61);
+        p.x *= this.scaling;
+        p.y *= this.scaling;
         var p0 = this.point(position - 1);
         var p1 = this.point(position + 1);
         var transforms = ['translate(' + p.x + 'px, ' + p.y + 'px)'];
