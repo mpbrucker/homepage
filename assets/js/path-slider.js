@@ -49,7 +49,8 @@ PathSlider.prototype = {
         clickSelection: true,
         pathOffset: 0,
         scaling: 1,
-        elemWidth: undefined
+        elemWidth: undefined,
+        elemId: undefined
     },
 
     init: function (options) {
@@ -67,7 +68,7 @@ PathSlider.prototype = {
     },
 
     calcSvgScaling: function () {
-        this.scaling = document.getElementById('wrapper1').offsetWidth/690.61;
+        this.scaling = document.getElementById(this.elemId).offsetWidth/this.elemWidth;
     },
 
     onWindowResize: function (event) {

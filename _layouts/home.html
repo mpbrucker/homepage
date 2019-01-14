@@ -12,34 +12,19 @@
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<div class="path-wrapper top" id="wrapper1">
-					{% include svg-top.html %}
+				{% for section in site.marquees %}
+				<div class="path-wrapper {{section.id}}" id="wrapper-{{section.id}}">
+					{% include svg-{{section.id}}.html %}
 					<div id="path">
-						{% assign letters = " COMPUTING + DESIGN " | split: '' | reverse %}
+						{% assign letters = section.text | split: '' | reverse %}
 						{% for letter in letters %}
-						<div id="path-item">
+						<div class="path-item" id="path-item-{{section.id}}">
 							<h2>{{letter}}</h2>
-						</div>
-						{% endfor %}
-						{% assign letters2 = "MATT BRUCKER" | split: '' | reverse %}
-						{% for letter in letters2 %}
-						<div id="path-item">
-							<h1>{{letter}}</h1>
 						</div>
 						{% endfor %}
 					</div>
 				</div>
-				<div class="path-wrapper bottom" id="wrapper1">
-						{% include svg-bottom.html %}
-						<div id="path">
-							{% assign letters = "TEST " | split: '' | reverse %}
-							{% for letter in letters %}
-							<div id="path-item">
-								<h2>{{letter}}</h2>
-							</div>
-							{% endfor %}
-						</div>
-					</div>
+				{% endfor %}
 				<div id="splash">
 					<div id="box-left" class="horizontal"></div>
 					<div id="box-right" class="horizontal"></div>

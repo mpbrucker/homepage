@@ -8,6 +8,10 @@ $line-red: #ef4136;
 $horizColor: #cccccc;
 $vertColor: #dddddd;
 
+#wrapper {
+  overflow: hidden;
+}
+
 .cover {
   fill: $vertColor;
 }
@@ -64,7 +68,7 @@ $vertColor: #dddddd;
   }
 }
 
-#path-item {
+.path-item {
   width: $box-width;
   height: $box-height;
   position: absolute;
