@@ -12,10 +12,11 @@
 	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
+				<div id="splash">
 				{% for section in site.marquees %}
 				<div class="path-wrapper {{section.id}}" id="wrapper-{{section.id}}">
 					{% include svg-{{section.id}}.html %}
-					<div id="path">
+					<div id="path" class="text-{{section.id}}">
 						{% assign letters = section.text | split: '' | reverse %}
 						{% for letter in letters %}
 						<div class="path-item" id="path-item-{{section.id}}">
@@ -25,16 +26,16 @@
 					</div>
 				</div>
 				{% endfor %}
-				<div id="splash">
-					<div id="box-left" class="horizontal"></div>
-					<div id="box-right" class="horizontal"></div>
-					<div id="box-top" class="vertical"></div>
-					<div id="box-bottom" class="vertical"></div>
-					<div id="continue">
-						<a href="#main">MORE</a>
-					</div>
-					
+				
+				<div id="box-left" class="horizontal"></div>
+				<div id="box-right" class="horizontal"></div>
+				<div id="box-top" class="vertical"></div>
+				<div id="box-bottom" class="vertical"></div>
+				<div id="continue">
+					<a href="#main">MORE</a>
 				</div>
+					
+			</div>
 				<!-- Main -->
 				<div id="main">
 					<div class="inner">

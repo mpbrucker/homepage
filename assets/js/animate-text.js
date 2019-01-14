@@ -12,3 +12,8 @@ var options = {
 
 // Initialize the slider using our SVG path, items, and options
 new PathSlider('#text-path-top', '#path-item-top', options);
+
+options.elemId = "wrapper-bottom";
+options.elemWidth = 624;
+// Initialize the slider using our SVG path, items, and options
+new PathSlider('#text-path-bottom', '#path-item-bottom', options);
