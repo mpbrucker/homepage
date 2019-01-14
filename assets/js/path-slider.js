@@ -138,10 +138,10 @@ PathSlider.prototype = {
         for (var i = 0; i < this.itemsLength; i++) {
             this.positions.push(currentPosition);
             currentPosition += i === 0 ? this.activeSeparation : sepLength;
-            if (currentPosition >= this.pathLength - this.paddingSeparation) {
-                currentPosition += 2 * this.paddingSeparation;
-                currentPosition -= this.pathLength;
-            }
+            // if (currentPosition >= this.pathLength - this.paddingSeparation) {
+            //     currentPosition += 2 * this.paddingSeparation;
+            //     currentPosition -= this.pathLength;
+            // }
         }
     },
 
@@ -161,102 +161,6 @@ PathSlider.prototype = {
 
     point: function (position) {
         return this.path.getPointAtLength(this.getRealPosition(position));
-    },
-
-    selectItem: function (index) {
-        var item = this.items[index];
-        var positionIndex = item.positionIndex;
-        var clock = true;
-        if (positionIndex !== 0) {
-            for (var j = 0; j < this.animations.length; j++) {
-                this.animations[j].anime.pause();
-            }
-            this.animations = [];
-            this.updateClass(index);
-            if (positionIndex > this.itemsLength / 2) {
-                clock = false;
-            }
-
-            var that = this;
-            for (var i = 0; i < this.itemsLength; i++) {
-                (function(i) {
-                    var current = that.items[i];
-                    var newPositionIndex = i - index < 0 ? that.itemsLength - (index - i) : i - index;
-                    var newPosition = that.positions[newPositionIndex];
-                    var stagger = that.stagger;
-                    var staggerIndex = current.positionIndex;
-
-                    if (clock) {
-                        if (current.position < newPosition) {
-                            newPosition -= that.pathLength;
-                            staggerIndex += that.itemsLength;
-                        }
-                        stagger *= staggerIndex - positionIndex;
-                    } else {
-                        if (current.position >= newPosition) {
-                            newPosition += that.pathLength;
-                            if (current.positionIndex > positionIndex) {
-                                staggerIndex -= that.itemsLength;
-                            }
-                        }
-                        stagger *= positionIndex - staggerIndex;
-                    }
-
-                    if (i === 0) call(that.beginAll);
-                    var params = {
-                        index: i,
-                        node: current.node,
-                        selected: newPositionIndex === 0,
-                        unselected: current.positionIndex === 0
-                    };
-                    call(that.begin, params);
-
-                    var target = {
-                        position: current.position
-                    };
-                    current.positionIndex = newPositionIndex;
-                    current.position = that.getRealPosition(newPosition);
-
-                    that.animations.push({
-                        index: i,
-                        anime: anime({
-                            targets: target,
-                            position: newPosition,
-                            duration: that.duration,
-                            easing: that.easing,
-                            elasticity: that.elasticity,
-                            delay: that.delay + stagger,
-                            update: function () {
-                                that.setPosition(current.node, target.position);
-                            },
-                            complete: function () {
-                                call(that.end, params);
-                                that.animations = that.animations.filter(function (a) { return a.index !== i; });
-                                if (that.animations.length === 0) {
-                                    call(that.endAll);
-                                }
-                            }
-                        })
-                    });
-                })(i);
-            }
-        }
-    },
-
-    selectPrevItem: function () {
-        this.selectItem(this.getPrevItem(this.currentIndex));
-    },
-
-    selectNextItem: function () {
-        this.selectItem(this.getNextItem(this.currentIndex));
-    },
-
-    getPrevItem: function (index) {
-        return index > 0 ? index - 1 : this.itemsLength - 1;
-    },
-
-    getNextItem: function (index) {
-        return index + 1 < this.itemsLength ? index + 1 : 0;
     },
 
     getRealPosition: function (position) {
