@@ -71,7 +71,6 @@ PathSlider.prototype = {
     },
 
     onWindowResize: function (event) {
-        console.log('test');
         this.calcSvgScaling();
         this.updatePositions();
     },
@@ -80,7 +79,6 @@ PathSlider.prototype = {
         event.stopPropagation();
         this.pathOffset = event.pageX;
         this.updatePositions();
-        // this.updateClass();
     },
 
     initPathOptions: function () {

@@ -28,17 +28,34 @@ $vertColor: #dddddd;
   top: 0px;
 }
 
-.path-wrapper {
-  position: absolute;
+.top {
   left: 15vw;
   width: 40vw;
+}
+
+.bottom {
+  right: 5vw;
+  width: 35vw;
+  bottom: 0px;
+}
+
+.path-wrapper {
+  position: absolute;
   z-index: 1;
-  #path {
+  #path-top {
     position: absolute;
     width: 100%;
     top: calc(-5.7vw + 35px);
     top: -webkit-calc(-5.7vw + 35px);
     top: -moz-calc(-5.7vw + 35px);
+  }
+
+  #path-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: calc(5.7vw - 35px);
+    bottom: -webkit-calc(5.7vw - 35px);
+    bottom: -moz-calc(5.7vw - 35px);
   }
 }
 
