@@ -36,6 +36,12 @@ topics:
   - computing
   - design
 
+marquees:
+  - id: top
+    text: "MATTHEW BRUCKER"
+  - id: bottom
+    text: "COMPUTING + DESIGN"
+
 sass:
   sass_dir: assets/css
 

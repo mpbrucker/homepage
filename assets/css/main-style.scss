@@ -31,31 +31,36 @@ $vertColor: #dddddd;
 .top {
   left: 15vw;
   width: 40vw;
+  top: calc(-5.7vw + 35px);
+  top: -webkit-calc(-5.7vw + 35px);
+  top: -moz-calc(-5.7vw + 35px);
 }
 
 .bottom {
   right: 5vw;
   width: 35vw;
-  bottom: 0px;
+  bottom: calc(5.7vw - 35px);
+  bottom: -webkit-calc(5.7vw - 35px);
+  bottom: -moz-calc(5.7vw - 35px);
 }
 
 .path-wrapper {
   position: absolute;
   z-index: 1;
-  #path-top {
+
+  .text-cover {
+    z-index: 3;
+  }
+  
+  #path {
     position: absolute;
-    width: 100%;
-    top: calc(-5.7vw + 35px);
-    top: -webkit-calc(-5.7vw + 35px);
-    top: -moz-calc(-5.7vw + 35px);
+    width: 100%; 
   }
 
   #path-bottom {
     position: absolute;
     width: 100%;
-    bottom: calc(5.7vw - 35px);
-    bottom: -webkit-calc(5.7vw - 35px);
-    bottom: -moz-calc(5.7vw - 35px);
+    bottom: 0px; 
   }
 }
 
@@ -65,6 +70,7 @@ $vertColor: #dddddd;
   position: absolute;
   left: - $box-width / 2;
   top: - $box-height / 2;
+  z-index: 2;
   h2 {
     font-size: 2vw;
     color: $line-red;
