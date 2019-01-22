@@ -16,6 +16,6 @@ new PathSlider('#text-path-top', '#path-item-top', options);
 
 options.elemId = "wrapper-bottom";
 options.elemWidth = 624;
-options.startLength = -170;
+options.startLength = -140;
 // Initialize the slider using our SVG path, items, and options
 new PathSlider('#text-path-bottom', '#path-item-bottom', options);

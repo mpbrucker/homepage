@@ -50,7 +50,9 @@ PathSlider.prototype = {
         pathOffset: 0,
         scaling: 1,
         elemWidth: undefined,
-        elemId: undefined
+        elemId: undefined,
+        mousePrevX: 0,
+        mouseDown: false
     },
 
     init: function (options) {
@@ -61,10 +63,28 @@ PathSlider.prototype = {
         this.initPathOptions();
         this.initItems();
         document.addEventListener('mousemove', this.onMouseMove.bind(this), false);
+        document.addEventListener('mousedown', this.onMouseDown.bind(this), false);
+        document.addEventListener('mouseup', this.onMouseUp.bind(this), false);
         window.addEventListener('resize', this.onWindowResize.bind(this), false);
         if (this.clickSelection) {
             this.initEvents();
         }
+        // this.updatePositions();
+    },
+
+    onMouseDown: function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.mouseDown = true;
+        this.mousePrevX = event.pageX;
+        document.getElementById('splash').style.cursor = 'grabbing';
+    },
+
+    onMouseUp: function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.mouseDown = false;
+        document.getElementById('splash').style.cursor = 'grab';
     },
 
     calcSvgScaling: function () {
@@ -78,8 +98,12 @@ PathSlider.prototype = {
 
     onMouseMove: function (event) {
         event.stopPropagation();
-        this.pathOffset = event.pageX;
-        this.updatePositions();
+        if (this.mouseDown) {
+            this.pathOffset += (event.pageX - this.mousePrevX);
+            this.mousePrevX = event.pageX;
+            this.updatePositions();
+        }
+        
     },
 
     initPathOptions: function () {
@@ -130,7 +154,7 @@ PathSlider.prototype = {
     calcPositions: function () {
         this.positions = [];
         this.pathLength = this.path.getTotalLength();
-        this.initPathOptions();
+        // this.initPathOptions();
         var restLength = this.pathLength - (2 * this.activeSeparation) - (2 * this.paddingSeparation);
         var sepLength = restLength / (this.itemsLength - 2);
         var currentPosition = this.startLength;
