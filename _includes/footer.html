@@ -1,15 +1,12 @@
 <footer id="footer">
     <div class="inner">
         <section>
-            <h2>Contact Me</h2>
             <ul class="icons">
                 {% for page in site.data.social %}
-                <li><a href={{page.url}} class="icon style2 fa-{{page.icon}}"><span class="label">{{page.name}}</span></a></li>
+                <li><a href={{page.url}}>{{page.name}}</a></li> | 
                 {% endfor %}
+                <li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
-        </section>
-        <ul class="copyright">
-            <li>&copy; Matthew Brucker. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
+            <span></span>
     </div>
 </footer>

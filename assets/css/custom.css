@@ -1,3 +1,7 @@
+ul.icons li {
+  padding: 0 2em 0 2em;
+}
+
 .tiles article > .image:after {
   background-image: none;
 
@@ -23,6 +27,8 @@
 
 #footer {
   padding: 1em 0 1em 0;
+  background-color: #eeeeee;
+  border-top: 1px solid black;
 }
 
 .category {

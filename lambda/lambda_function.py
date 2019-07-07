@@ -4,6 +4,7 @@ from PIL import Image
 from io import BytesIO
 from os import path
 
+
 s3 = boto3.resource('s3')
 origin_bucket = 'mbrucker.com'
 width_size = 1000
