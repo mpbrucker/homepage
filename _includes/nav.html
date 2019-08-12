@@ -6,11 +6,13 @@
         </a>            
 
         <!-- Logo -->
-            <ul class="icons SiteHeader__nav-content">
+            <ul class="SiteHeader__nav-content">
                 {% for page in site.pages %}
                     {% if page.layout == 'home' %}
                         <li class="SiteHeader__nav-item">
-                            <a class="SiteHeader__nav-link" href={{page.url}}>{{page.title}}</a>
+                            <a class="SiteHeader__nav-link" href={{page.url}}>
+                                <span>{{page.title}}</span>
+                            </a>
                         </li>
                     {% endif %}
                 {% endfor %}
