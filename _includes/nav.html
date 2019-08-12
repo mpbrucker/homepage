@@ -1,14 +1,17 @@
-<header id="header">
-    <div class="inner">
+<header class="SiteHeader__root">
+    <div class="SiteHeader__inner">
+        <a href={{site.baseurl}} class="logo SiteHeader__logo" >
+            <img class="SiteHeader__logo-img" src="/images/logo.svg" alt="" />
+            <span class="SiteHeader__title">{{site.title}}</span>
+        </a>            
 
         <!-- Logo -->
-            <ul class="icons">
-                <a href={{site.baseurl}} class="logo" >
-                        <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">{{site.title}}</span>
-                </a>            
+            <ul class="icons SiteHeader__nav-content">
                 {% for page in site.pages %}
                     {% if page.layout == 'home' %}
-                        <li><a href={{page.url}}>{{page.title}}</a></li>
+                        <li class="SiteHeader__nav-item">
+                            <a class="SiteHeader__nav-link" href={{page.url}}>{{page.title}}</a>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>
