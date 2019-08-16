@@ -1,12 +1,12 @@
-<footer id="footer" class="SiteFooter__root">
-    <div class="inner">
+<footer class="SiteFooter__root">
+    <div class="SiteFooter__inner">
         <section>
-            <ul class="icons">
+            <ul class="SiteFooter__social">
                 {% for page in site.data.social %}
-                <li><a href={{page.url}}>{{page.name}}</a></li> | 
+                    <li class="SiteFooter__social-item">
+                        <a class="SiteFooter__social-link" href={{page.url}}>{{page.name}}</a>
+                    </li>
                 {% endfor %}
-                <li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
-            <span></span>
     </div>
 </footer>

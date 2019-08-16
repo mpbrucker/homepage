@@ -8,7 +8,7 @@
         <!-- Logo -->
             <ul class="SiteHeader__nav-content">
                 {% for page in site.pages %}
-                    {% if page.layout == 'home' %}
+                    {% if page.layout == 'home' or page.layout == 'projects' %}
                         <li class="SiteHeader__nav-item">
                             <a class="SiteHeader__nav-link" href={{page.url}}>
                                 <span>{{page.title}}</span>
