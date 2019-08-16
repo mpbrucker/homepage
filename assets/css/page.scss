@@ -4,3 +4,10 @@
 .Page__root {
     padding-top: 20px;
 }
+
+.Page__root .Page__content-inner {
+    width: 100%;
+    max-width: 68em;
+    margin: 0 auto;
+    padding: 0 200px;
+}

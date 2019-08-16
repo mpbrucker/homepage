@@ -14,7 +14,7 @@ For the final project in my Software Design class, I worked on a team of five pe
 
 The first challenge of the project was creating a realistic physics simulation of the car. In order to keep the scope of the project manageable, we chose a two-wheel design with the front wheel steering, as well as features such as slip between the tires and the road. This allowed us to fulfill our goals of creating a fairly realistic simulation of the physics of a car, while also keeping implementation fairly achievable.
 
-![A car.](images/car.png)
+![A car.](/images/car.png)
 
 ## Autonomous Driving and Evolution
 
