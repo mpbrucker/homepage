@@ -9,5 +9,19 @@
     width: 100%;
     max-width: 68em;
     margin: 0 auto;
-    padding: 0 200px;
+    padding: 0 250px;
+}
+
+.Page__root .Page__image {
+    display: block;
+    margin: auto;
+    max-height: 400px;
+}
+
+.Page__root .Page__image-row {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 400px;
 }
