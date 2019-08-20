@@ -1,6 +1,8 @@
 ---
 ---
 
+$image-widths: 1 2 3 4 6 9 12;
+
 .Page__root {
     padding-top: 20px;
 }
@@ -13,7 +15,6 @@
 }
 
 .Page__root .Page__image {
-    display: block;
     margin: auto;
     max-height: 400px;
 }
@@ -25,3 +26,23 @@
     justify-content: space-between;
     max-height: 400px;
 }
+
+.Page__root .Page__left-justify {
+    position: relative;
+    left: -25%;
+    float: left;
+}
+
+.Page__root .Page__right-justify {
+    position: relative;
+    left: 25%;
+    float: left;
+}
+
+@each $width in $image-widths {
+    .Page__root .Page__image-#{$width} {
+        max-width: #{100 * ($width/12) * 1%};
+    }
+}
+
+
