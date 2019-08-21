@@ -65,7 +65,20 @@ $base-color: #eeeeee;
 }
 
 @media (max-width: 768px) {
+    .SiteHeader__root {
+        height: 120px;
+    }
+
     .SiteHeader__inner {
+        flex-direction: column;
         padding: 0 20px;
+    }
+
+    .SiteHeader__logo {
+        margin: 0 0 10px;
+    }
+    
+    .SiteHeader__logo-img {
+        padding-left: 0;
     }
 }
