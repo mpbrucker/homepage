@@ -1,6 +1,15 @@
 ---
 ---
 
+.Home__about-me {
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 15px;
+    justify-content: center;
+}
+
 .Home__inner {
     display: flex;
     flex-direction: row;
@@ -8,4 +17,14 @@
     max-width: 68em;
     padding: 50px 2.5em;
     width: 100%;
+}
+
+@media (max-width: 930px) {
+    .Home__about-me {
+        order: -1;
+    }
+
+    .Home__inner {
+        flex-direction: column;
+    }
 }

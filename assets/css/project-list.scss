@@ -1,2 +1,24 @@
 ---
 ---
+
+.ProjectList__root {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.ProjectList__tile {
+    margin:10px;
+    width: 50%;
+    background-color: red;
+}
+
+.ProjectList__tile:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
