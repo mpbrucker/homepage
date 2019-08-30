@@ -7,49 +7,27 @@
 <html>
 	{% include header.html %}
 	<link rel="stylesheet" href="/assets/css/main-style.css" />
+	<link rel="stylesheet" href="/assets/css/home.css" />
 	
 	
 	<body>
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<div id="splash">
-				{% for section in site.marquees %}
-				<div class="path-wrapper {{section.id}}" id="wrapper-{{section.id}}">
-					{% include svg-{{section.id}}.html %}
-					<div id="path" class="text-{{section.id}}">
-						{% assign letters = section.text | split: '' | reverse %}
-						{% for letter in letters %}
-						<div class="path-item" id="path-item-{{section.id}}">
-							<h2>{{letter}}</h2>
-						</div>
-						{% endfor %}
-					</div>
+		<div class="Home__wrapper" id="wrapper">
+			{% include nav.html %}
+			<!-- Main -->
+			<div class="Home__root">
+				<div class="Home__inner">
+					{% include project-list.html %}
+					<header>
+						<h1>About Me</h1>
+						<p style="font-size: 20px; line-height: 40px;">
+							{{content}}
+						</p>
+					</header>
 				</div>
-				{% endfor %}
-				
-				<div id="box-left" class="horizontal"></div>
-				<div id="box-right" class="horizontal"></div>
-				<div id="box-top" class="vertical"></div>
-				<div id="box-bottom" class="vertical"></div>
-				<div id="continue">
-					<a href="#main">MORE</a>
-				</div>
-					
 			</div>
-				<!-- Main -->
-				<div id="main">
-					<div class="inner">
-						<header>
-							<h1>About Me</h1>
-							<p style="font-size: 20px; line-height: 40px;">
-								{{content}}
-							</p>
-						</header>
-						{% include project-list.html %}
-					</div>
-				</div>
-				{% include footer.html %}
-			</div>
+			{% include footer.html %}
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/path-slider.js"></script>
