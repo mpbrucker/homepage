@@ -5,19 +5,12 @@
         {% assign image_name = "images/" | append: page_name.last %}
         <div class="ProjectList__tile-wrapper">
             <img class="ProjectList__tile" src={{image_name | replace: "md", "jpg" }} />
-            <a class="ProjectList__tile-link" href={{page.url}}>
-                <h2>{{page.title}}</h2>
-            </a>
+            <div class="ProjectList__title">
+                <a class="ProjectList__tile-link" href={{page.url}}>
+                    <h2 class="ProjectList__text">{{page.title}}</h2>
+                </a>
+            </div>
         </div>
-            <!-- <span class="image tile">
-                <img class="tile-image" src={{image_name | replace: "md", "jpg" }} alt="" />
-            </span>
-            <a href={{page.url}}>
-                <h2>{{page.title}}</h2>
-                <div class="content">
-                    <p>{{page.description}}</p>
-                </div>
-            </a> -->
     {% endfor %}
 </div>
 
