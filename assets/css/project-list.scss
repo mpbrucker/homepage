@@ -14,8 +14,10 @@
 
 .ProjectList__text {
     color: #ffffff;
+    font-weight: 700;
     margin: 0;
     letter-spacing: 0;
+    text-transform: lowercase;
 }
 
 .ProjectList__tile-link {
@@ -34,15 +36,24 @@
 }
 
 .ProjectList__tile-wrapper {
-    flex-basis: 33%;
+    flex: 0 0 30%;
     min-width: 150px;
-    padding: 0 5px;
+    margin: 5px;
     position: relative;
 }
 
 .ProjectList__tile {
-    height: auto;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
     width: 100%;
+}
+
+.ProjectList__tile-wrapper:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .ProjectList__title {
