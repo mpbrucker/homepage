@@ -6,6 +6,7 @@ category: design
 semester: Spring 2018
 subject: User-Oriented Collaborative Design
 elements: Design, Adobe Illustrator, Adobe InDesign
+included: true
 ---
 
 User-Oriented Collaborative Design is a design class at Olin that throws you into a user-oriented design project. It teaches you how to figure out not *how* to design something but *what* to design, through a continual process of learning about and designing with a specific user group. Teams of 4-5 work with a user group for an entire semester, beginning with simply learning about the user group and ending with a vision for a solution that could someday improve the lives of this group of people.

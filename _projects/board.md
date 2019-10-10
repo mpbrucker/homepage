@@ -6,6 +6,7 @@ category: computing
 semester: Spring 2018
 subject: Hacking the Library
 elements: React.js, AWS, Heroku
+included: true
 ---
 
 Our second project in Hacking the Library tasked us with creating a use for the Idea Harvester, a rolling installation of the Library with features for ideation and collaboration, in just three weeks. We decided to build off of the Idea Harvester's usefulness for team projects and create InfinityBoard. The motivation behind Infinity Board was to create a virtual whiteboard of sorts, a space for team collaboration that could be set up with low activation energy and used to ideate and organize thoughts. What we ended up with was a real-time collaborative web app where users could quickly create a new board, join the board, and begin adding/editing text and images in real-time. Check out the finished product [here!](http://infinityboard.olin.build)

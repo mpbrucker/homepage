@@ -6,6 +6,7 @@ category: design
 semester: Fall 2016
 subject: Design Nature
 elements: Design
+included: true
 ---
 
 For our final project in Design Nature, my team was tasked with designing and building a play experience for fourth-graders, based on a given animal - for our team, hermit crabs. Over the course of seven weeks, we investigated biological behaviors, brainstormed experiences, researched existing toys, and iterated on our ideas.
