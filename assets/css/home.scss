@@ -19,6 +19,13 @@
     width: 100%;
 }
 
+.Home__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media (max-width: 930px) {
     .Home__about-me {
         order: -1;

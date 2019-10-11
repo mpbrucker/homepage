@@ -3,6 +3,10 @@
 
 $base-color: #eeeeee;
 
+html, body {
+  height: 100%;
+}
+
 #main {
   padding-top: 6em;
 }
