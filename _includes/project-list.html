@@ -5,7 +5,7 @@
             {% assign page_name = page.path | split: "/" %}
             {% assign image_name = "images/" | append: page_name.last %}
             <div class="ProjectList__tile-wrapper">
-                <img class="ProjectList__tile" src={{image_name | replace: "md", "jpg" }} />
+                <img class="ProjectList__tile" src={{image_name | replace: "md", "png" }} />
                 <div class="ProjectList__title">
                     <a class="ProjectList__tile-link" href={{page.url}}>
                         <h2 class="ProjectList__text">{{page.title}}</h2>
