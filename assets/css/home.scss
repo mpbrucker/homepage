@@ -21,12 +21,13 @@
     bottom: 70px;
     display: flex;
     flex-direction: row;
+    left: 0px;
     margin: 0 auto;
     max-width: 68em;
     padding: 50px 2.5em;
     position: absolute;
+    right: 0px;
     top: 0;
-    width: 100%;
 }
 
 @media (max-width: 930px) {
