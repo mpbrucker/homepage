@@ -2,9 +2,12 @@
 ---
 
 .SiteFooter__root {
+    border-top: 1px solid black;
+    bottom: 0;
     height: 70px;
     padding: 5px 0;
-    border-top: 1px solid black;
+    position: absolute;
+    width: 100%;
 }
 
 .SiteFooter__root .SiteFooter__inner {

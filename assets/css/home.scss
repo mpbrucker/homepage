@@ -1,6 +1,13 @@
 ---
 ---
 
+.Home__wrapper {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .Home__about-me {
     display: flex;
     flex-basis: 0;
@@ -11,11 +18,14 @@
 }
 
 .Home__inner {
+    bottom: 70px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     max-width: 68em;
     padding: 50px 2.5em;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
