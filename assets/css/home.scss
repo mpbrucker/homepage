@@ -1,13 +1,6 @@
 ---
 ---
 
-.Home__wrapper {
-    bottom: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
 .Home__about-me {
     display: flex;
     flex-basis: 0;
@@ -18,23 +11,19 @@
 }
 
 .Home__inner {
-    bottom: 70px;
+    bottom: 60px;
     display: flex;
     flex-direction: row;
-    left: 0px;
-    margin: 0 auto;
-    max-width: 68em;
-    padding: 50px 2.5em;
-    position: absolute;
-    right: 0px;
-    top: 0;
+    padding: 50px;
 }
 
 .Home__wrapper {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
 }
 
 @media (max-width: 930px) {
@@ -44,5 +33,6 @@
 
     .Home__inner {
         flex-direction: column;
+        padding: 20px;
     }
 }

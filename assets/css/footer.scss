@@ -3,11 +3,11 @@
 
 .SiteFooter__root {
     border-top: 1px solid black;
-    bottom: 0;
-    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
     padding: 5px 0;
-    position: absolute;
-    width: 100%;
 }
 
 .SiteFooter__root .SiteFooter__inner {
