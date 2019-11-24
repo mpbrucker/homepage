@@ -39,3 +39,17 @@
     line-height: 40px;
     border: 1px solid black;
 }
+
+@media (max-width: 480px) {
+    .SiteFooter__root .SiteFooter__inner {
+        padding: 0 5px;
+    }
+
+    .SiteFooter__root .SiteFooter__social-item {
+        margin: 0 5px;
+    }
+    
+    .SiteFooter__root .SiteFooter__social {
+        max-width: 300px;
+    }
+}
