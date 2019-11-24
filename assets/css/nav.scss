@@ -8,7 +8,7 @@ $base-color: #eeeeee;
     display: flex;
     flex-direction: row;
     height: 100%;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .SiteHeader__root {
@@ -27,7 +27,6 @@ $base-color: #eeeeee;
 .SiteHeader__logo-img {
     display: block;
     height: 50px;
-    margin: 0 10px;
     width: 50px;
 }
 
@@ -63,10 +62,6 @@ $base-color: #eeeeee;
 }
 
 @media (max-width: 768px) {
-
-    .SiteHeader__inner {
-        padding: 0 20px;
-    }
 
     .SiteHeader__logo {
         margin: 0 0 10px;
