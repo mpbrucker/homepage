@@ -19,7 +19,7 @@ How do we represent statistics about Olin? As part of Olin Snapshot, a Greenhous
 
 ![Creating the silicone mold](/images/chocostats/img3.jpg){: .Page__image}
 
-Illustrator design → Laser-cut positive → food-safe silicone mold → chocolate relief. Tiny details in the design broke off easily when removing the chocolates from the mold; it took several iterations to create a design that was sturdy enough for details to remain.
+**Illustrator design → laser-cut positive → food-safe silicone mold → chocolate relief.** Tiny details in the design broke off easily when removing the chocolates from the mold; it took several iterations to create a design that was sturdy enough for details to remain.
 
 ![Arranging elements](/images/chocostats/img4.jpg){: .Page__image}
 
@@ -27,6 +27,6 @@ Illustrator design → Laser-cut positive → food-safe silicone mold → chocol
 
 ## Final Product
 
-![The final shot](/images/chocostats/img6.jpg){: .Page__image}
-
 ![Chocostats in Olin Snapshot](/images/chocostats/img7.jpg){: .Page__image}
+
+![The final shot](/images/chocostats/img6.jpg){: .Page__image}

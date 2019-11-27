@@ -40,7 +40,7 @@ $image-widths: 1 2 3 4 6 9 12;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 400px;
+    max-height: 600px;
 }
 
 .Page__root .Page__left-justify {
@@ -54,6 +54,11 @@ $image-widths: 1 2 3 4 6 9 12;
     max-width: 100%;
 }
 
+.Page__root .Page__main-image-container {
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
 .Page__root .Page__right-justify {
     position: relative;
     left: 25%;
@@ -62,7 +67,7 @@ $image-widths: 1 2 3 4 6 9 12;
 
 @each $width in $image-widths {
     .Page__root .Page__image-#{$width} {
-        max-width: #{100 * ($width/12) * 1%};
+        width: #{(100 * ($width/12) * 1%)-1%};
     }
 }
 

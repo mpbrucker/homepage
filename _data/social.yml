@@ -6,6 +6,6 @@
   icon: linkedin
   url: https://www.linkedin.com/in/matthew-brucker-968493111/
 
-- name: contact me
+- name: email
   icon: envelope
-  url: mailto:matthew.brucker@students.olin.edu
+  url: mailto:mbrucker@olin.edu

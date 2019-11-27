@@ -18,7 +18,7 @@
 						<div class="Page__content-inner">
 							{% assign page_name = page.path | split: "/" %}
 							{% assign image_name = "/images/" | append: page_name.last %}		
-							<div >
+							<div class="Page__main-image-container">
 								<img class="Page__main-image" src={{image_name | replace: ".md", "-large.png" }} alt="" />
 							</div>
 							<h1>{{page.title}}</h1>
