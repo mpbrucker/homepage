@@ -5,86 +5,22 @@ description: Designing for people, with people.
 category: design
 semester: Spring 2018
 subject: User-Oriented Collaborative Design
-elements: Design, Adobe Illustrator, Adobe InDesign
 included: true
 ---
 
-User-Oriented Collaborative Design is a design class at Olin that throws you into a user-oriented design project. It teaches you how to figure out not *how* to design something but *what* to design, through a continual process of learning about and designing with a specific user group. Teams of 4-5 work with a user group for an entire semester, beginning with simply learning about the user group and ending with a vision for a solution that could someday improve the lives of this group of people.
+I spent a semester on a team of four doing in-depth collaborative design with a user group. Our team met with ten individuals who work with refugees and immigrants--through community organizations, charities, and in Boston's City Hall--to learn about their work and their pain points. After generating ideas, we brought them back to the same people to co-design interventions that would improve their lives.
 
-## Phase 1
-Phase 1 was focused on discovery: finding people in your user group, talking with them, empathizing with them, and synthesizing what you learn into over-arching personas that encompass similarities and differences within the group. My team worked with people who help refugees and immigrants, which meant that we traveled across many parts of the Boston area to talk to various nonprofits, charities, and community organizations.
+![Our studio](/images/uocd/img1.jpg){: .Page__image}
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/phase1_1.jpg">
-    </span>
-  </div>
-</div>
+![Teamwork](/images/uocd/img2.jpg){: .Page__image}
 
-We set out to find the answers to questions such as: Who makes up our user group? What do they do in their daily activities? What are their values, beliefs, and motivations? What tensions exist within the group? Because our user group consisted of both volunteers and paid employees, we also hoped to determine what differences and similarities existed among these groups.
+We found that people working in this area often struggled to get a "big picture" view of the impact they were having, and a lack of data also sometimes made it difficult to acquire funding.
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/persona.jpg">
-    </span>
-  </div>
-</div>
+At the same time, they cared greatly about their work and valued any ideas that would also be beneficial for the people they helped. Based on this insight, we developed a mapping system called Inact that could be used by organizations in conjunction with events such as community networking nights. During an event, Inact maps are hung up, creating space for people (both those working at community organizations and those visiting) to tell their life story and connect with others. At the end of an event, separate "feedback maps" allow attendees to record feedback about their experience at the event. This information is accessible by those who work at the organization, allowing them to better understand who is attending events and providing actionable data on how various events and initiatives within the organization are impacting the community.
 
-After a number of user visits, we began synthesizing what we knew. This process began with simply laying out what we knew. What did we notice from our interviews? What important points or quotes could we pull out? We then began using several frameworks to categorize what we knew, plotting the people we talked to on various axes to determine whether any underlying patterns existed. From that, we generated personas which represented the three primary groupings we noticed. However, this process was hardly straightforward or linear. We had to go through a lot of questioning of both our user group and our own process to determine what anything meant, and to figure out whether what we were doing process-wise was actually leading to anything that was meaningful!
+![Prototyping our final design](/images/uocd/img3.jpg){: .Page__image}
 
-## Phase 2
-After wading through the nebulousness of Phase 1, Phase 2 brought us into the realm of solution ideation. We generated hundreds of ideas, progressively narrowing down through a series of filters and determining factors.
+![A map prototype](/images/uocd/img4.jpg){: .Page__image}
 
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/phase2_1.jpg">
-    </span>
-  </div>
-</div>
-
-The other major component of this phase was co-design. We did base our ideas off of what we already knew about our user group, but that wasn't enough. We also brought our ideas back to the people we originally talked to in order to get feedback from them: What ideas would actually be useful? What ideas could be improved? This phase also forced us to consider the boldness of the ideas we were creating. We were encouraged to think of ideas that had fanciful elements, things that would truly create change within our user group, instead of getting mired in the mundane. For my team, this proved difficult to overcome, requiring many rounds of ideation to create ideas that stuck. At the end of the phase, we had a few general directions with which we could move forward.
-
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/phase2_2.jpg">
-    </span>
-  </div>
-</div>
-
-## Phase 3
-Phase 3 found us focusing on details. Starting with the three directions we'd identified in the previous phase, we narrowed down to one and began figuring out how the various elements and interactions would fit together. This process required a careful balance of focusing on the small details without getting hung up on any single thing.
-
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/phase2_1.jpg">
-    </span>
-  </div>
-</div>
-
-
-## Final Design: Inact
-
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/phase2_2.jpg">
-    </span>
-  </div>
-</div>
-
-We ended the phase with our final idea, Inact. Inact is a "smart map" system that provides clear information to those who help refugees and immigrants. A system of RFID tokens and "smart maps" which map where the tokens are placed empowers refugees and immigrants by giving them a space to tell their stories and record feedback on their experiences with organizations such as the ones we talked to. This information is viewable by those who work at the organization, allowing them to become closer with those they help by better understanding their stories, and also providing actionable data on how various events and initiatives within the organization are helping the community.
-
-<div class = "row uniform">
-  <div class = "6u -3u">
-    <span class = "image fit">
-      <img src="images/InteractionMap.jpg">
-    </span>
-  </div>
-</div>
 
 Our full-size final posters can be viewed [here.](https://drive.google.com/drive/folders/1QIOpgNMexWTSRU8bT0pMLk_2ZVU0G2kW?usp=sharing)

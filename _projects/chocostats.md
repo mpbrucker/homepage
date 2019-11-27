@@ -21,6 +21,8 @@ How do we represent statistics about Olin? As part of Olin Snapshot, a Greenhous
 
 **Illustrator design → laser-cut positive → food-safe silicone mold → chocolate relief.** Tiny details in the design broke off easily when removing the chocolates from the mold; it took several iterations to create a design that was sturdy enough for details to remain.
 
+Axes and labels were designed in Illustrator, cut out of vinyl, and arranged by hand.
+
 ![Arranging elements](/images/chocostats/img4.jpg){: .Page__image}
 
 ![The photography shoot](/images/chocostats/img5.jpg){: .Page__image}
