@@ -12,8 +12,8 @@ $base-color: #eeeeee;
 }
 
 .SiteHeader__root {
-    min-height: 60px;
-    padding: 5px 0;
+    min-height: 70px;
+    padding: 10px 0;
 }
 
 .SiteHeader__logo {
@@ -62,16 +62,8 @@ $base-color: #eeeeee;
 }
 
 @media (max-width: 768px) {
-
-    .SiteHeader__logo {
-        margin: 0 0 10px;
-    }
     
     .SiteHeader__logo-img {
         padding-left: 0;
-    }
-
-    .SiteHeader__title {
-        display: none;
     }
 }
