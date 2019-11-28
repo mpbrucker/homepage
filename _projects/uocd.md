@@ -20,7 +20,10 @@ At the same time, they cared greatly about their work and valued any ideas that 
 
 ![Prototyping our final design](/images/uocd/img3.jpg){: .Page__image}
 
-![A map prototype](/images/uocd/img4.jpg){: .Page__image}
+![Interaction graphic concept with the map](/images/uocd/img4.png){: .Page__image}
 
+![A map prototype](/images/uocd/img5.jpg){: .Page__image}
+
+![Interaction map](/images/uocd/img6.jpg){: .Page__image}
 
 Our full-size final posters can be viewed [here.](https://drive.google.com/drive/folders/1QIOpgNMexWTSRU8bT0pMLk_2ZVU0G2kW?usp=sharing)
