@@ -12,9 +12,14 @@ $base-color: #eeeeee;
 }
 
 .SiteHeader__root {
-    min-height: 70px;
+    height: 70px;
     padding: 10px 0;
     width: 100%;
+}
+
+.SiteHeader__root--fixed {
+    position: fixed;
+    top: 0;
 }
 
 .SiteHeader__logo {
@@ -31,7 +36,7 @@ $base-color: #eeeeee;
     width: 50px;
 }
 
-.SiteHeader__nav-content,  {
+.SiteHeader__nav-content {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -63,6 +68,10 @@ $base-color: #eeeeee;
 }
 
 @media (max-width: 768px) {
+
+    .SiteHeader__root--fixed {
+        position: relative;
+    }
     
     .SiteHeader__logo-img {
         padding-left: 0;

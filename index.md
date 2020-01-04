@@ -6,5 +6,5 @@ description: Home
 
 # Matt Brucker
 
-I do design, web tech, education research, and sometimes food art. I'm a senior at [Olin College of Engineering](http://www.olin.edu/) majoring in Engineering with Computing. 
+I play with design, web tech, visual representations, education research, and sometimes food art. I'm a senior at [Olin College of Engineering](http://www.olin.edu/) majoring in Engineering with Computing. 
 
