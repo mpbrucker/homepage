@@ -1,6 +1,6 @@
 ---
 layout: page
-title: chocostats (food experiments 1)
+title: chocostats (food experiment 1)
 category: design
 semester: Spring 2019
 subject: Greenhouse
