@@ -9,7 +9,7 @@ included: true
 
 ## Provocation
 
-**The Greenhouse** is a group independent study I helped start at Olin. Part design lab and part institutional change studio, we work on design projects in collaboration with institutions -- both internal to Olin and external. Over the three semesters of The Greenhouse's existence, I've prototyped several different forms of its visual identity, both virtual and print.
+**The Greenhouse** is a group independent study I helped start at Olin. Part design lab and part institutional change studio, we work on design projects in collaboration with institutions -- both internal to Olin and external. Over the three semesters of The Greenhouse's existence, I've explored different forms of its visual identity, virtually and in print.
 
 <div class="Page__image-row">
     <img class="Page__image-6" src="/images/ghidentity/img1.png">

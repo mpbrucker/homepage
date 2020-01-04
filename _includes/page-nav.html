@@ -1,0 +1,20 @@
+<header class="SiteHeader__root SiteHeader__root--fixed">
+    <div class="SiteHeader__inner">
+        <a href={{site.baseurl}} class="logo SiteHeader__logo" >
+            <img class="SiteHeader__logo-img" src="/images/logo.svg" alt="" />
+        </a>            
+
+            <ul class="SiteHeader__nav-content">
+                {% for page in site.pages %}
+                    {% if page.layout == 'projects' %}
+                        <li class="SiteHeader__nav-item">
+                            <a class="SiteHeader__nav-link" href={{page.url}}>
+                                <span>{{page.title}}</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+    </div>
+</header>
