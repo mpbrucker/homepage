@@ -31,3 +31,6 @@ gem "jekyll-sitemap"
 # Verifies website is working, used in Travis CI
 gem "html-proofer"
 
+# For pagination of blog
+gem "jekyll-paginate"
+

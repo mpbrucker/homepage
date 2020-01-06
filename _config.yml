@@ -17,7 +17,11 @@ title: Matt Brucker
 baseurl: "/"
 description: Computing + Design
 url: "https://mbrucker.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Blog page settings
 show_excerpts: true
+paginate: 10
+paginate_path: "/blog/page:num/"
 
 # Build settings
 markdown: kramdown
@@ -32,6 +36,7 @@ collections:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
 
 topics:
   - computing
