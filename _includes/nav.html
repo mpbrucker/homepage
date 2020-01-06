@@ -2,7 +2,8 @@
     <div class="SiteHeader__inner">
         <a href={{site.baseurl}} class="logo SiteHeader__logo" >
             <img class="SiteHeader__logo-img" src="/images/logo.svg" alt="" />
-        </a>            
+        </a> 
+        <a href="/blog" class="SiteHeader__blog">blog</a>
 
             <ul class="SiteHeader__nav-content">
                 {% for page in site.pages %}
@@ -15,6 +16,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
     </div>
 </header>
+<div class="SiteHeader__padding"></div>
