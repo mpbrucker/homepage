@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/assets/css/blog.css" />
+{% include page-nav.html %}
+<!-- Main -->
+<div class="Page__root">
+    <div class="Page__content-inner">
+        {%- if site.posts.size > 0 -%}
+        <h1 class="Blog__title">{{ page.list_title | default: "Posts" }}</h1>
+        <ul class="Blog__post-list">
+          {%- for post in site.posts -%}
+          <li class="Blog__post">
+            {%- assign date_format = "%b %-d, %Y" -%}
+            <span class="Blog__post-date">{{ post.date | date: date_format }}</span>
+            <h2>
+              <a class="Blog__post-url" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h2>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+</div>

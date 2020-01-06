@@ -1,33 +1,13 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<link rel="stylesheet" href="/assets/css/home.css" />
-	{% include header.html %}
-	
-	<body>
-		<!-- Wrapper -->
-		<div class="Home__wrapper">
-			{% include nav.html %}
-			<!-- Main -->
-				<div class="Home__inner">
-					{% include project-list.html %}
-					<header class="Home__about-me">
-						{{content}}
-					</header>
-				</div>
-			{% include footer.html %}
-		</div>
+---
+layout: default
+---
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+{% include nav.html %}
+<!-- Main -->
+<div class="Home__inner">
+	{% include project-list.html %}
+	<header class="Home__about-me">
+		{{content}}
+		<a class="Home__button" target="_blank" href="/assets/resume.pdf">Resume</a>
+	</header>
+</div>

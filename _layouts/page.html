@@ -1,44 +1,16 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<link rel="stylesheet" href="/assets/css/page.css" />
-	<link rel="stylesheet" href="/assets/css/home.css" />
-	{% include header.html %}
-	<body>
-		<!-- Wrapper -->
-			<div class="Home__wrapper">
-
-				{% include page-nav.html %}
-				<!-- Main -->
-					<div class="Page__root">
-						<div class="Page__content-inner">
-							{% assign page_name = page.path | split: "/" %}
-							{% assign image_name = "/images/" | append: page_name.last %}		
-							<div class="Page__main-image-container">
-								<img class="Page__main-image" src={{image_name | replace: ".md", "-large.png" }} alt="" />
-							</div>
-							<h1>{{page.title}}</h1>
-							{% if page.subject and page.date %}
-								<h4>{{page.subject}} | {{page.semester}}</h4>
-							{% endif %}
-							{{content}}
-						</div>
-					</div>
-
-				{% include footer.html %}
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/skel.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/assets/js/main.js"></script>
-
-	</body>
-</html>
+{% include page-nav.html %}
+<!-- Main -->
+<div class="Page__root">
+	<div class="Page__content-inner">
+		{% assign page_name = page.path | split: "/" %}
+		{% assign image_name = "/images/" | append: page_name.last %}		
+		<div class="Page__main-image-container">
+			<img class="Page__main-image" src={{image_name | replace: ".md", "-large.png" }} alt="" />
+		</div>
+		<h1>{{page.title}}</h1>
+		{% if page.subject and page.date %}
+			<h4>{{page.subject}} | {{page.semester}}</h4>
+		{% endif %}
+		{{content}}
+	</div>
+</div>
