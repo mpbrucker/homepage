@@ -20,11 +20,21 @@
     text-align: center;
 }
 
+.Home__img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .Home__inner {
     bottom: 60px;
     display: flex;
     flex-direction: row;
     padding: 50px;
+}
+
+.Home__inner--about {
+    overflow: hidden;
+    padding: 50px 50px 0;
 }
 
 .Home__wrapper {
@@ -45,5 +55,9 @@
     .Home__inner {
         flex-direction: column;
         padding: 20px;
+    }
+
+    .Home__inner--about {
+        overflow: visible;
     }
 }
