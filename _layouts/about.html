@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<link rel="stylesheet" href="/assets/css/page.css" />
+	<link rel="stylesheet" href="/assets/css/home.css" />
+	{% include header.html %}
+	<body>
+		<!-- Wrapper -->
+			<div class="Home__wrapper Home__wrapper--about">
+                {% include nav.html %}
+                <!-- Main -->
+                <div class="Home__inner Home__inner--about">
+                    <img class="Home__img" src="/images/me.png" />
+                    <header class="Home__about-me">
+                        {{content}}
+                    </header>
+                </div>
+				{% include footer.html %}
+			</div>
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+	</body>
+</html>
+
+
