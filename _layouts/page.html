@@ -6,13 +6,18 @@ layout: default
 <div class="Page__root">
 	<div class="Page__content-inner">
 		{% assign page_name = page.path | split: "/" %}
-		{% assign image_name = "/images/" | append: page_name.last %}		
-		<div class="Page__main-image-container">
-			<img class="Page__main-image" src={{image_name | replace: ".md", "-large.png" }} alt="" />
-		</div>
+		{% assign image_name = "/images/" | append: page_name.last %}	
+		{% if page.noheader != true %}	
+			<div class="Page__main-image-container">
+				<img class="Page__main-image" src={{image_name | replace: ".md", "-large.png" }} alt="" />
+			</div>
+		{% endif %}
 		<h1>{{page.title}}</h1>
-		{% if page.subject and page.date %}
-			<h4>{{page.subject}} | {{page.semester}}</h4>
+		{% if page.semester %}
+			<h4>{{page.semester}}</h4>
+		{% endif %}
+		{% if page.date %}
+			<h4>{{ page.date | date: "%b %d, %Y" }}</h4>
 		{% endif %}
 		{{content}}
 	</div>
