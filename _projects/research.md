@@ -16,6 +16,4 @@ We developed the constructs of *impact* and *awareness* to describe how students
 
 ![Provocation 1](/images/research/img1.jpg){: .Page__image}
 
-{% include ctw.html %}
-
-While consisting of a highly specific and limited sample (13 alumni from a gender-balanced engineering college), our research indicated that students navigate and build engineering identity in complex ways, and that *having more women in an engineering program is not by itself a way to ensure gender equity.* The constructs we found point to deeper, systemic and cultural issues in engineering and engineering education that need to be examined further if we are make engineering more gender-equitable. The full text of our paper can be viewed [at the IEEE website](https://ieeexplore.ieee.org/document/8658912).
+While consisting of a highly specific and limited sample (13 alumni from a gender-balanced engineering college), our research indicated that students navigate and build engineering identity in complex ways. The constructs we found point to deeper, systemic and cultural issues in engineering and engineering education that need to be examined further if we are make engineering more gender-equitable. The full text of our paper can be viewed [at the IEEE website](https://ieeexplore.ieee.org/document/8658912).
