@@ -6,5 +6,5 @@ description: Home
 
 # Matt Brucker
 
-I play with design, web tech, visual representations, education research, and sometimes food art. I'm a senior at [Olin College of Engineering](http://www.olin.edu/) majoring in Engineering with Computing. 
+I play with design, web tech, visual representations, and sometimes food art. I also do [education research](/projects/research). Currently a student in Northwestern University's [CS + LS PhD program](https://csls.sesp.northwestern.edu/); previously, I studied engineering at [Olin College of Engineering](http://www.olin.edu/) with a concentration in Computing. 
 

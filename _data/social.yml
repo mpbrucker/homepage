@@ -2,10 +2,6 @@
   icon: github
   url: https://github.com/mpbrucker
 
-- name: LinkedIn
-  icon: linkedin
-  url: https://www.linkedin.com/in/matthew-brucker-968493111/
-
-- name: email
+- name: email me
   icon: envelope
-  url: mailto:mbrucker@olin.edu
+  url: mailto:matt@brucker.dev

@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 40px;
+    min-height: 30px;
     padding: 5px 0;
 }
 
@@ -38,9 +38,9 @@
 
 .SiteFooter__root .SiteFooter__social-link {
     text-transform: lowercase;
-    margin: 4px 0 4px 0;
-    padding: 6px 12px;
-    line-height: 40px;
+    margin: 2px 0 2px 0;
+    padding: 4px 12px;
+    line-height: 30px;
     border: 1px solid black;
 }
 

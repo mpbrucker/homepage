@@ -16,9 +16,6 @@ layout: default
 		{% if page.semester %}
 			<h4>{{page.semester}}</h4>
 		{% endif %}
-		{% if page.date %}
-			<h4>{{ page.date | date: "%b %d, %Y" }}</h4>
-		{% endif %}
 		{{content}}
 	</div>
 </div>
