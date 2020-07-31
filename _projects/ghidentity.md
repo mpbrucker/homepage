@@ -5,6 +5,7 @@ category: design
 semester: Spring 2019
 subject: Greenhouse
 included: true
+date: 01-01-2019
 ---
 
 ## Provocation

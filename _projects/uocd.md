@@ -6,6 +6,7 @@ category: design
 semester: Spring 2018
 subject: User-Oriented Collaborative Design
 included: true
+date: 01-01-2018
 ---
 
 I spent a semester on a team of four doing in-depth collaborative design with a user group. Our team met with ten individuals who work with refugees and immigrants--through community organizations, charities, and in Boston's City Hall--to learn about their work and their pain points. After generating ideas, we brought them back to the same people to co-design interventions that would improve their lives.

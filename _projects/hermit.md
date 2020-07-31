@@ -7,6 +7,7 @@ semester: Fall 2016
 subject: Design Nature
 elements: Design
 included: true
+date: 09-01-2016
 ---
 
 ## Provocation

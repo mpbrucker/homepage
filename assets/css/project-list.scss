@@ -2,10 +2,10 @@
 ---
 
 .ProjectList__root {
+    max-height: 100%;
     display: flex;
     flex-direction: row;
-    flex-basis: 0;
-    flex-grow: 1;
+    flex: 1 0 40%;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto 5px;

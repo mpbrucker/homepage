@@ -5,6 +5,7 @@ category: design
 semester: Fall 2019
 subject: Creativity Practicum
 included: true
+date: 09-01-2019
 ---
 
 ## Provocation

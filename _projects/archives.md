@@ -6,6 +6,7 @@ category: design
 semester: Fall 2018
 subject: The Greenhouse
 included: true
+date: 09-01-2019
 ---
 
 ## Provocation

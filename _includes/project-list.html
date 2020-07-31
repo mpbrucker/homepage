@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/assets/css/project-list.css" />
 <div class="ProjectList__root">
-    {% for page in site.projects %}
+    {% assign projects_sorted = site.projects | sort:"date" | reverse %}
+    {% for page in projects_sorted %}
         {% if page.included == true %}
             {% assign page_name = page.path | split: "/" %}
             {% assign image_name = "images/" | append: page_name.last %}

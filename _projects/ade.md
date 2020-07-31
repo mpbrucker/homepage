@@ -5,6 +5,7 @@ category: design
 semester: Fall 2019
 subject: Affordable Design and Entrepreneurship
 included: false
+date: 09-01-2019
 ---
 
 ## Provocation

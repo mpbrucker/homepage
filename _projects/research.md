@@ -5,6 +5,7 @@ category: design
 semester: Spring 2017--present
 subject: Research
 included: true
+date: 09-01-2018
 ---
 
 Since 2017, I have been a member of Olin's education research group under Professor Yevgeniya Zastavker. In Fall 2018, we presented our work at the Frontiers in Education (FIE) conference, with myself as the primary author. Our research qualitatively explores student identity in engineering education, through the narratives of college alumni. In our research presented at FIE, we used grounded theory to develop emergent constructs to understand how they perceived as impacting (or not impacting) their interactions in school and workplace settings.

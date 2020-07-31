@@ -4,6 +4,7 @@ title: pizza (food experiment 2)
 category: design
 semester: Spring 2019
 included: true
+date: 01-01-2019
 ---
 
 ## Provocation

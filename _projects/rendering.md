@@ -6,6 +6,7 @@ category: computing
 semester: Spring 2017
 subject: Software Design
 elements: Python
+date: 01-01-2017
 ---
 
 For our Interactive Programming project in Software Design, my team wanted to stretch our Python skills by deeply exploring the details of an interactive programming concept, and implement that idea from the ground up. We eventually settled on creating a 3D graphics engine, exploring the math behind how 3D graphics work and creating our own rudimentary version of a 3D graphics engine.

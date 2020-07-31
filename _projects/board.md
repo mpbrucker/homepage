@@ -7,6 +7,7 @@ semester: Spring 2018
 subject: Hacking the Library
 elements: React.js, AWS, Heroku
 included: true
+date: 01-01-2018
 ---
 
 ## Provocation
