@@ -1,4 +1,6 @@
 AFRAME.registerComponent('point-at-camera', {
+    // schema: {default: 0.5}
+
     init: function() {
         console.log('init');
         this.raycaster = new THREE.Raycaster();
@@ -20,9 +22,11 @@ AFRAME.registerComponent('point-at-camera', {
             this.mousePos.sub( this.camera.position ).normalize();
 
 
-            let distance = (0.1- this.camera.position.z) / this.mousePos.z;
+            let distance = (-5 - this.camera.position.z) / this.mousePos.z;
 
             this.pos.copy( this.camera.position ).add( this.mousePos.multiplyScalar( distance ) );
+            console.log(this.pos);
+            this.el.object3D.lookAt(this.pos);
         }
     }
 })
