@@ -2,6 +2,7 @@
 layout: home
 title: Home
 description: Home
+aframeEnabled: true
 ---
 
 # Matt Brucker
