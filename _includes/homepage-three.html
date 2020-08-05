@@ -14,17 +14,15 @@
     var renderer;
     var cube;
     var composer;
+    const canvas = document.querySelector('#canvas');
 
     function init() {
         scene = new THREE.Scene();
         scene.background = new THREE.Color( 0xffffff );
         camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-        const canvas = document.querySelector('#canvas');
         renderer = new THREE.WebGLRenderer({canvas});
-        // renderer.setSize( window.innerWidth, window.innerHeight );
-        // let parent
-        // document.body.appendChild( renderer.domElement );
+        renderer.setSize( canvas.clientWidth, canvas.clientHeight );
 
         composer = new EffectComposer(renderer);
         composer.setSize(window.innerWidth, window.innerHeight);
@@ -40,6 +38,9 @@
     }
 
     function animate() {
+        const canvas = renderer.domElement;
+        camera.aspect = canvas.clientWidth / canvas.clientHeight;
+        camera.updateProjectionMatrix();
         requestAnimationFrame( animate );
 
         // cube.rotation.x += 0.01;
@@ -49,16 +50,15 @@
     }
 
     function initScene() {
-        var geometry = new THREE.ConeGeometry(1, 2, 25);
+        var geometry = new THREE.ConeGeometry(1, 2, 7);
         var material = new THREE.MeshPhongMaterial( { color: 0x00ff00, flatShading: true } );
         cube = new THREE.Mesh( geometry, material );
-        scene.add( cube );
+        scene.add(cube);
         cube.rotation.z = -Math.PI / 2;
 
         camera.position.z = Z_DIST;
 
         var tanVal = Math.tan((FOV/2) * (Math.PI/180));
-        console.log(tanVal);
 
         // camera.position.x = Z_DIST * tanVal;
 
@@ -83,21 +83,30 @@
     var pos = new THREE.Vector3();
 
     document.addEventListener('mousemove', function(event) {
+        var rect = canvas.getBoundingClientRect();
+        var xDiff = rect.left + (rect.width / 2);
+        var yDiff = rect.top + (rect.height / 2);
         mousePos.set(
-                ( event.clientX / window.innerWidth ) * 2 - 1,
-                - ( event.clientY / window.innerHeight ) * 2 + 1,
+                ( (event.clientX + xDiff + 65) / window.innerWidth ) * 2 - 1,
+                - ( (event.clientY) / window.innerHeight ) * 2 + 1,
                 0 );
-        mousePos.unproject(camera).normalize();
+        mousePos.unproject(camera);
+        mousePos.z = 0;
+        mousePos.normalize();
 
-        
-        if (Math.atan(mousePos.y/mousePos.x) > 0) {
+        var didFlip = false;
+        if (Math.atan(mousePos.y/mousePos.x) >= 0) {
             mousePos.x *= -1;
             mousePos.y *= -1;
+            didFlip = true;
+        }
+
+        if (Math.abs(mousePos.y) > .9999) {
+            mousePos.x = ((didFlip && mousePos.y < 0) || (!didFlip && mousePos.y > 0)) ? -.0001 : .0001;
+            mousePos.y = .9999;
         }
 
         pos.set(mousePos.x, mousePos.y, 0);
-        console.log(pos);
-
         cube.lookAt(pos);
         cube.rotation.y -= Math.PI/2;
     })
