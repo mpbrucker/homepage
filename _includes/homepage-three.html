@@ -2,6 +2,9 @@
     import * as THREE from 'https://unpkg.com/three@0.119.1/build/three.module.js'; 
     import { EffectComposer } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/EffectComposer.js';
     import { RenderPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/RenderPass.js';
+    import { DotScreenPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/DotScreenPass.js';
+    import { ShaderPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/ShaderPass.js';
+    import { DitherPass } from '/assets/js/shaders/DitherPass.js';
 
     var scene;
     var camera;
@@ -20,8 +23,12 @@
 
         composer = new EffectComposer(renderer);
         composer.setSize(window.innerWidth, window.innerHeight);
+
         var renderPass = new RenderPass( scene, camera );
         composer.addPass(renderPass);
+        var dotPass = new DotScreenPass();
+        dotPass.renderToScreen = true;
+        composer.addPass(dotPass);
 
 
         initScene();
@@ -32,16 +39,30 @@
 
         cube.rotation.x += 0.01;
         cube.rotation.y += 0.01;
-        renderer.render( scene, camera );
+        composer.render();
+        // renderer.render( scene, camera );
     }
 
     function initScene() {
-        var geometry = new THREE.BoxGeometry();
-        var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+        var geometry = new THREE.SphereGeometry();
+        var material = new THREE.MeshPhongMaterial( { color: 0x00ff00, flatShading: true } );
         cube = new THREE.Mesh( geometry, material );
         scene.add( cube );
         camera.position.z = 5;
         camera.position.x = 3;
+
+        const pointLight = new THREE.PointLight(0xffffff,1);
+        pointLight.castShadow = true;
+
+        pointLight.position.x = 2;
+        pointLight.position.y = 20;
+        pointLight.position.z = 2; 
+
+        scene.add(pointLight);
+
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, .5);
+        scene.add(ambientLight)
     }
 
     init();
