@@ -47,16 +47,18 @@
     }
 
     function initScene() {
-        var geometry = new THREE.SphereGeometry();
+        var geometry = new THREE.ConeGeometry(1, 2, 25);
         var material = new THREE.MeshPhongMaterial( { color: 0x00ff00, flatShading: true } );
         cube = new THREE.Mesh( geometry, material );
         scene.add( cube );
+        cube.rotation.z = -Math.PI / 2;
+
         camera.position.z = Z_DIST;
 
         var tanVal = Math.tan((FOV/2) * (Math.PI/180));
         console.log(tanVal);
 
-        camera.position.x = Z_DIST * tanVal;
+        // camera.position.x = Z_DIST * tanVal;
 
         const pointLight = new THREE.PointLight(0xffffff,1);
         pointLight.castShadow = true;
@@ -82,14 +84,18 @@
         mousePos.set(
                 ( event.clientX / window.innerWidth ) * 2 - 1,
                 - ( event.clientY / window.innerHeight ) * 2 + 1,
-                -5 );
-            // this.mousePos.unproject(this.camera);
-            // this.mousePos.sub( this.camera.position ).normalize();
+                0 );
+        mousePos.unproject(camera);
+        mousePos.sub( camera.position ).normalize();
+
+        console.log(mousePos)
 
 
-            // let distance = (-1- this.camera.position.z) / this.mousePos.z;
+        let distance = (-5 - camera.position.z) / mousePos.z;
         pos.copy( camera.position ).add( mousePos.multiplyScalar( 100 ) );
-        cube.lookAt(pos);
+        // console.log(pos);
+        cube.lookAt(new THREE.Vector3(pos.x, pos.y, 0));
+        cube.rotation.y -= Math.PI/2;
     })
 
     window.addEventListener( 'resize', onWindowResize, false );
