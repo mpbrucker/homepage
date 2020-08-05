@@ -85,16 +85,18 @@
                 ( event.clientX / window.innerWidth ) * 2 - 1,
                 - ( event.clientY / window.innerHeight ) * 2 + 1,
                 0 );
-        mousePos.unproject(camera);
-        mousePos.sub( camera.position ).normalize();
+        mousePos.unproject(camera).normalize();
 
-        console.log(mousePos)
+        
+        if (Math.atan(mousePos.y/mousePos.x) > 0) {
+            mousePos.x *= -1;
+            mousePos.y *= -1;
+        }
 
+        pos.set(mousePos.x, mousePos.y, 0);
+        console.log(pos);
 
-        let distance = (-5 - camera.position.z) / mousePos.z;
-        pos.copy( camera.position ).add( mousePos.multiplyScalar( 100 ) );
-        // console.log(pos);
-        cube.lookAt(new THREE.Vector3(pos.x, pos.y, 0));
+        cube.lookAt(pos);
         cube.rotation.y -= Math.PI/2;
     })
 
