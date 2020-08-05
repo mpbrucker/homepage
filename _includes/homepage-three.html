@@ -20,9 +20,11 @@
         scene.background = new THREE.Color( 0xffffff );
         camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-        renderer = new THREE.WebGLRenderer({alpha: true});
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        document.body.appendChild( renderer.domElement );
+        const canvas = document.querySelector('#canvas');
+        renderer = new THREE.WebGLRenderer({canvas});
+        // renderer.setSize( window.innerWidth, window.innerHeight );
+        // let parent
+        // document.body.appendChild( renderer.domElement );
 
         composer = new EffectComposer(renderer);
         composer.setSize(window.innerWidth, window.innerHeight);
@@ -110,7 +112,6 @@
         renderer.setSize( window.innerWidth, window.innerHeight );
 
     }
-
-
 </script>
 
+<canvas id="canvas" class="Home__canvas"></canvas>
