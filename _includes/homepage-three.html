@@ -4,7 +4,7 @@
     import { RenderPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/RenderPass.js';
     import { DotScreenPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/DotScreenPass.js';
     import { ShaderPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/ShaderPass.js';
-    import { DitherPass } from '/assets/js/shaders/DitherPass.js';
+    import { DitherShader } from '/assets/js/shaders/DitherShader.js';
 
     var scene;
     var camera;
@@ -26,9 +26,9 @@
 
         var renderPass = new RenderPass( scene, camera );
         composer.addPass(renderPass);
-        var dotPass = new DotScreenPass();
-        dotPass.renderToScreen = true;
-        composer.addPass(dotPass);
+        var ditherPass = new ShaderPass(DitherShader);
+        ditherPass.renderToScreen = true;
+        composer.addPass(ditherPass);
 
 
         initScene();
