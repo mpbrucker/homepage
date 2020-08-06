@@ -14,7 +14,26 @@
     var renderer;
     var cube;
     var composer;
+    var line;
+    var path;
     const canvas = document.querySelector('#canvas');
+    var u = 0;
+
+    class CustomSinCurve extends THREE.Curve {
+        constructor(scale, u) {
+            super();
+            this.scale = scale;
+            this.u = u;
+        }
+
+        getPoint(t) {
+            const tx = t * 3 - 1.5;
+            const ty = Math.sin(2 * Math.PI * t + this.u);
+            const tz = 0;
+            return new THREE.Vector3(tx, ty, tz).multiplyScalar(this.scale);
+        }
+    }
+
 
     function init() {
         scene = new THREE.Scene();
@@ -43,7 +62,25 @@
         camera.updateProjectionMatrix();
         requestAnimationFrame( animate );
 
-        // cube.rotation.x += 0.01;
+        cube.rotateY(0.003);
+        cube.rotateX(0.003);
+        line.rotation.y -= 0.003;
+        line.rotation.x -= 0.003;
+
+        u += 0.01;
+
+        path = new CustomSinCurve(1, u);
+        const tubularSegments = 50;  
+
+        const radius = 0.2;  
+
+        const radialSegments = 15;  
+
+        const closed = false;  
+        const geo = new THREE.TubeBufferGeometry(path, tubularSegments, radius, radialSegments, closed);
+        line.geometry = geo;
+        line.needsUpdate = true;
+
         // cube.rotation.y += 0.01;
         composer.render();
         // renderer.render( scene, camera );
@@ -55,6 +92,19 @@
         cube = new THREE.Mesh( geometry, material );
         scene.add(cube);
         cube.rotation.z = -Math.PI / 2;
+
+        path = new CustomSinCurve(1, u);
+        const tubularSegments = 20;  
+
+        const radius = 0.2;  
+
+        const radialSegments = 8;  
+
+        const closed = false;  
+        const geo = new THREE.TubeBufferGeometry(path, tubularSegments, radius, radialSegments, closed);
+        line = new THREE.Mesh (geo, material);
+        scene.add(line);
+
 
         camera.position.z = Z_DIST;
 

@@ -2,6 +2,7 @@
 ---
 
 .ProjectList__root {
+    overflow: scroll;
     max-height: 100%;
     display: flex;
     flex-direction: row;
