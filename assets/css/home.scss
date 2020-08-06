@@ -77,8 +77,10 @@
 
 @media (max-width: 930px) {
     .Home__about-me {
+        position: absolute;
         order: -1;
         padding: 0;
+        right: 5px;
     }
 
     .Home__inner {
@@ -88,5 +90,9 @@
 
     .Home__inner--about {
         overflow: visible;
+    }
+
+    .Home__paper-container {
+        flex: 1 0 100%;
     }
 }
