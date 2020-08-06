@@ -1,8 +1,17 @@
-var elem = document.querySelector('.ProjectList__project-title');
+document.addEventListener('DOMContentLoaded', function() {
+    var elem = document.querySelector('.ProjectList__project-title');
+    var height;
+    document.addEventListener('mousemove', function(e) {
+        if (e.target.className === 'ProjectList__tile-link') {
+            elem.textContent = e.target.textContent;
+            height = elem.getBoundingClientRect().height;
 
-console.log(elem);
-document.addEventListener('mousemove', function(e) {
-    elem.style.left = e.clientX;
-    elem.style.top = e.clientY;
-    console.log(e.target);
+            elem.style.left = e.clientX - 90 + 'px';
+            elem.style.top = e.clientY - height - 5 + 'px';    
+            elem.style.opacity = 1;
+        } else {
+            elem.style.opacity = 0;
+        }
+    }, true)
 })
+
