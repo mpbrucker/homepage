@@ -6,6 +6,13 @@
     import { ShaderPass } from 'https://unpkg.com/three@0.119.1/examples/jsm/postprocessing/ShaderPass.js';
     import { DitherShader } from '/assets/js/shaders/DitherShader.js';
 
+    var loader = new THREE.TextureLoader();
+    var texture = loader.load('/assets/dither-texture.png');
+    texture.minFilter = THREE.NearestFilter;
+    texture.magFilter = THREE.NearestFilter;
+    texture.wrapS = THREE.RepeatWrapping;
+    texture.wrapT = THREE.RepeatWrapping;
+
     const FOV = 75;
     const Z_DIST = 5;
 
@@ -18,6 +25,8 @@
     var path;
     const canvas = document.querySelector('#canvas');
     var u = 0;
+
+
 
     class CustomSinCurve extends THREE.Curve {
         constructor(scale, u) {
@@ -36,6 +45,7 @@
 
 
     function init() {
+        
         scene = new THREE.Scene();
         scene.background = new THREE.Color( 0xffffff );
         camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -48,7 +58,13 @@
 
         var renderPass = new RenderPass( scene, camera );
         composer.addPass(renderPass);
-        var ditherPass = new ShaderPass(DitherShader);
+
+        var shader = new THREE.ShaderMaterial(DitherShader)
+        shader.uniforms.tDither.value = texture;
+        shader.uniforms.resolution.value.set(canvas.clientWidth, canvas.clientHeight, 1);
+        shader.needsUpdate = true;
+        // var ditherPass = new ShaderPass(DitherShader);
+        var ditherPass = new ShaderPass(shader);
         ditherPass.renderToScreen = true;
         composer.addPass(ditherPass);
 
@@ -88,7 +104,8 @@
 
     function initScene() {
         var geometry = new THREE.ConeGeometry(1, 2, 7);
-        var material = new THREE.MeshPhongMaterial( { color: 0x00ff00, flatShading: true } );
+        // var material = material_shh;
+        var material = new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true, map: texture } );
         cube = new THREE.Mesh( geometry, material );
         scene.add(cube);
         cube.rotation.z = -Math.PI / 2;
@@ -161,16 +178,16 @@
         cube.rotation.y -= Math.PI/2;
     })
 
-    window.addEventListener( 'resize', onWindowResize, false );
+    // window.addEventListener( 'resize', onWindowResize, false );
 
-    function onWindowResize(){
+    // function onWindowResize(){
 
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
+    //     const canvas = renderer.domElement;
+    //     camera.aspect = canvas.innerWidth / canvas.innerHeight;
+    //     camera.updateProjectionMatrix();
 
-        renderer.setSize( window.innerWidth, window.innerHeight );
-
-    }
+    //     renderer.setSize( canvas.innerWidth, canvas.innerHeight );
+    // }
 </script>
 
 <canvas id="canvas" class="Home__canvas"></canvas>

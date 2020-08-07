@@ -5,6 +5,9 @@ title: About Me
 
 # About Me
 
-I'm a technologist, designer, and education researcher who attended [Olin College of Engineering](http://www.olin.edu/). My work encompasses web tech, visual and human-centered design, and art, exploring institutional culture, collaboration, and tech. Much of my work has been with The Greenhouse, an in-house "institutional design studio" I helped found at Olin. I've also done various design projects in co-design with various communities in the Boston area, including my senior capstone design work as part of [AirPartners](http://airpartners.org).
+I'm a technologist, designer, and education researcher, currently studying in Northwestern University's [Computer Science + Learning Sciences](https://csls.sesp.northwestern.edu/) PhD program.
 
-My research uses qualitative methods to explore gender equity and engineering/institutional culture through the narratives of students in engineering education. We presented our work at the [IEEE Frontiers in Education Conference](https://ieeexplore.ieee.org/document/8658912) in 2018.
+My research uses qualitative methods to explore gender equity and engineering/institutional culture through the narratives of engineering students. My Olin research group presented our work at the [IEEE Frontiers in Education Conference](https://ieeexplore.ieee.org/document/8658912) in 2018.
+
+I studied Computer Science at [Olin College of Engineering](http://www.olin.edu/), where I helped found The Greenhouse, an in-house "institutional design studio" that experimented with institutional culture and held [some events.](https://www.cnn.com/2020/03/13/us/olin-college-fauxmencement-coronavirus-trnd/index.html) For my senior capstone design work, I helped pilot a program for affordable air quality home interventions in East Boston as part of [AirPartners](http://airpartners.org).
+
