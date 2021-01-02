@@ -4,13 +4,15 @@ var DitherShader = {
 		"tDiffuse": { value: null },
 		"tDither": { type: "t", value: null },
 		"resolution": { value: new THREE.Vector3() },
+		"time": { value: 0.0 },
 	},
 
     vertexShader: `
-    varying vec2 vUv;
+	varying vec2 vUv;
+	uniform float time;
 		void main() {
 			vUv = uv;
-			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position-0.1*sin(time), 1.0 );
 
 		}    
     `,
@@ -32,7 +34,9 @@ var DitherShader = {
 			// grey = grey / 0.039;
 			// grey = floor(grey + 0.5);
 			// grey = grey * 0.039;
-			gl_FragColor = vec4(step(ditherColor.r, grey)); 
+			float gVal = 1.0 - 0.4*step(grey, ditherColor.r);
+			gl_FragColor = vec4(step(ditherColor.r, grey), gVal, step(ditherColor.r, grey), 1.0); 
+			// gl_FragColor = color;
 			
 		}
 	`
