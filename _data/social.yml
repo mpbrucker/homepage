@@ -1,7 +1,0 @@
-- name: Github
-  icon: github
-  url: https://github.com/mpbrucker
-
-- name: email me
-  icon: envelope
-  url: mailto:matt@brucker.dev

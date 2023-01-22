@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
-  vid = createVideo("/assets/echo-v2.mp4");
+  vid = createVideo("/assets/echo-v3.mp4");
   vid.size(400, 400);
   vid.volume(0);
   vid.loop();
