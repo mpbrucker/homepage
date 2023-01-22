@@ -13,10 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Matt Brucker 
+title: Maddie Brucker 
 baseurl: "/"
-description: Computing + Design
-url: "https://mbrucker.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://brucker.dev" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Blog page settings
 show_excerpts: true
@@ -30,9 +29,9 @@ theme: minima
 permalink: /:title
 
 collections:
-  projects:
+  posts:
     output: true
-    permalink: /projects/:title/
+    permalink: /posts/:title/
 
 plugins:
   - jekyll-sitemap

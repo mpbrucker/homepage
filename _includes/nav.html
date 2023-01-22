@@ -1,21 +1,18 @@
 <header class="SiteHeader__root">
     <div class="SiteHeader__inner">
-        <a href={{site.baseurl}} class="logo SiteHeader__logo" >
-            <img class="SiteHeader__logo-img" src="/images/logo.svg" alt="" />
-        </a> 
-        <a href="/about.html" class="SiteHeader__button">about</a>
+        <div class="SiteHeader__left-content">
+            <a href="/posts">posts</a>
+        </div>
+        <div class="SiteHeader__center-content">
+            <h1>
+                <a href="/">{{site.title}}</a>
+            </h1>    
+        </div>
+        <div class="SiteHeader__right-content">
+            <a href="/about">about</a>
+        </div>
+        
 
-            <ul class="SiteHeader__nav-content">
-                {% for page in site.pages %}
-                    {% if page.layout == 'projects' %}
-                        <li class="SiteHeader__nav-item">
-                            <a class="SiteHeader__nav-link" href={{page.url}}>
-                                <span>{{page.title}}</span>
-                            </a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
     </div>
 </header>
 <div class="SiteHeader__padding"></div>

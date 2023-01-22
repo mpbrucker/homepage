@@ -51,13 +51,14 @@
     // load a resource
     obj.load(
         // resource URL
-        'assets/grass-2.obj',
+        'assets/omg.obj',
         // called when resource is loaded
         function ( object ) {
             object.material = new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true } );
-            object.scale.set(0.1, 0.1, 0.1)
-            object.rotation.x = -3.1415/2;
-            object.position.y -= 1;
+            object.scale.set(0.1, 0.1, 0.07)
+            // object.rotation.x = -3.1415/2;
+            object.position.y -= 15;
+            object.position.z = -50;
             grass = object;
 
             console.log('adding');
@@ -87,7 +88,6 @@
         shader.uniforms.tDither.value = texture;
         shader.uniforms.resolution.value.set(canvas.clientWidth, canvas.clientHeight, 1);
         shader.needsUpdate = true;
-        console.log(shader.uniforms)
         // var ditherPass = new ShaderPass(DitherShader);
         var ditherPass = new ShaderPass(shader);
         ditherPass.renderToScreen = true;
@@ -103,10 +103,11 @@
 
     function animate() {
         if (grass !== null) {
-            grass.rotation.z += 0.008;
-            grass.position.y += Math.sin(Date.now()/200)/100;
+            grass.rotation.y += 0.008;
+            grass.position.y += Math.sin(Date.now()/200)/10;
         }
         shader.uniforms.time.value = Date.now();
+        shader.uniformsNeedUpdate = true;
         const canvas = renderer.domElement;
         camera.aspect = canvas.clientWidth / canvas.clientHeight;
         camera.updateProjectionMatrix();

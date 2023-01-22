@@ -12,7 +12,7 @@ var DitherShader = {
 	uniform float time;
 		void main() {
 			vUv = uv;
-			gl_Position = projectionMatrix * modelViewMatrix * vec4( position-0.1*sin(time), 1.0 );
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 
 		}    
     `,
@@ -24,7 +24,7 @@ var DitherShader = {
 		varying vec2 vUv;
 
 		void main () {
-			vec2 uv = gl_FragCoord.xy / vec2(5.0, 5.0);
+			vec2 uv = gl_FragCoord.xy / vec2(8.0, 8.0);
 
 			vec4 color = texture2D( tDiffuse, vUv );
 			vec4 ditherColor = texture2D(tDither, uv);
@@ -34,8 +34,13 @@ var DitherShader = {
 			// grey = grey / 0.039;
 			// grey = floor(grey + 0.5);
 			// grey = grey * 0.039;
-			float gVal = 1.0 - 0.4*step(grey, ditherColor.r);
-			gl_FragColor = vec4(step(ditherColor.r, grey), gVal, step(ditherColor.r, grey), 1.0); 
+			// float gVal = 1.0 - 0.4*step(grey, ditherColor.r);
+			// float rVal = 1.0 - 0.9*step(grey, ditherColor.r);
+			// float bVal = 1.0 - 0.98*step(grey, ditherColor.r);
+			float gVal = 1.0 - step(grey, ditherColor.r);
+			float rVal = 1.0 - step(grey, ditherColor.r);
+			float bVal = 1.0 - step(grey, ditherColor.r);
+			gl_FragColor = vec4(rVal, gVal, bVal, 1.0); 
 			// gl_FragColor = color;
 			
 		}
