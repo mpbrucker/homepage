@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+<div class="PostList__Wrapper">
+    {% for post in site.posts %}
+        {% assign page_name = post.path | split: "-" | last | split: "." | first %}
+        <a href="/posts/{{page_name}}">{{post.title}}</a>
+    {% endfor %} 
+</div>
+
